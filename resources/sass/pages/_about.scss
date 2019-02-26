@@ -1,0 +1,129 @@
+.about {
+  display: flex;
+  flex-direction: column;
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    font-size: $font-size-medium-text;
+  }
+
+  &__subtitle {
+    font-size: $font-size-secondary-heading;
+    text-align: center;
+  }
+
+  &__small-container {
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 5%;
+    box-shadow: 2px 2px 8px $color-shadow;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+
+  &__left-container {
+    width: 30%;
+  }
+
+  &__middle-container {
+    width: 40%;
+  }
+
+  &__right-container {
+    width: 30%;
+  }
+
+  //&__light-background {
+  //  background: $color-text-primary;
+  //  color: $color-primary;
+  //}
+  //
+  //&__dark-background {
+  //  background: $color-dark-violet;
+  //  color: $color-text-primary;
+  //}
+
+  &__photo {
+    background-image: linear-gradient(to right bottom, $color-primary, $color-secondary), url(/../img/Ag.png);
+    background-size: cover;
+    background-blend-mode: screen;
+    background-position: center;
+  }
+
+  &__description {
+    text-align: center;
+  }
+
+  &__details,
+  &__languages,
+  &__work,
+  &__hobbies {
+    ul {
+      list-style: none;
+      li {
+        display: flex;
+      }
+    }
+  }
+
+  &__details,
+  &__languages,
+  &__hobbies {
+    ul li {
+      justify-content: center;
+    }
+  }
+
+  &__details {
+    &--title {
+      color: $color-secondary;
+      text-transform: uppercase;
+      padding-right: 1rem;
+    }
+
+    &--desc {
+      &-small {
+        font-size: $font-size-small-text;
+      }
+    }
+  }
+
+  &__thesis {
+    width: 3rem;
+    display: inline-block;
+
+    background: $color-dark-violet;
+    border-radius: 5%;
+
+    transition: transform .3s;
+
+    &:hover {
+      color: $color-dark-violet;
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      color: $color-dark-violet;
+      background: $color-text-primary;
+      transform: translateY(2px);
+    }
+
+    a {
+      color: $color-text-primary;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: $color-text-primary;
+
+    }
+
+    a:active {
+      color: $color-dark-violet;
+      background: $color-text-primary;
+    }
+  }
+}

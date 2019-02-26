@@ -1,0 +1,15 @@
+button, .button {
+    font-family: inherit; 
+    font-size: 100%; 
+    line-height: 1.15;
+    margin: 0; 
+    text-transform: none;
+    -webkit-appearance: button;
+    border: none;
+    background: none;
+    outline: none;
+
+    &:focus {
+        outline: none;
+    }
+}

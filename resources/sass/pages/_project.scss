@@ -1,0 +1,46 @@
+.project {
+  &-section {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    &__container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &-panel {
+    display: flex;
+    flex-direction: column;
+    //transition: transform .3s;
+
+    &.project-panel--left {
+      position: relative;
+      .left-pic {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(-24rem) translateX(-2rem);
+
+        img {
+          width: 25rem;
+        }
+      }
+    }
+
+    &.project-panel--right {
+      position: relative;
+      .right-pic {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateY(-19rem) translateX(-1rem);
+
+        img {
+          width: 20rem;
+        }
+      }
+    }
+  }
+}

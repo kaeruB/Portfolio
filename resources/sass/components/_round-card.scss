@@ -1,0 +1,211 @@
+.round-card {
+  background-color: $color-primary;
+  border-radius: 50%;
+  width: 30rem;
+  height: 30rem;
+  box-shadow: 2px 2px 8px $color-shadow; // 0 1.5rem 4rem rgba($color-footer, .4);
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  @media only screen and (max-width: 75em) {
+    &:not(:last-child) {
+      margin-right: -1.5rem;
+    }
+  }
+
+  &__title {
+    color: $color-text-primary;
+    font-size: 3rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+  }
+//clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  &__projects {
+    //display: flex;
+    font-size: 2rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    height: 50%;
+    text-align: center;
+
+    &-left {
+      color: $color-background-primary;
+      background-color: $color-secondary;
+      width: 50%;
+      height: 100%;
+      clip-path: polygon(0 0, 100% 0, 100% 100%);
+
+      float: left;
+      position: relative;
+      transition: transform .2s;
+
+      &:hover {
+        color: $color-background-primary;
+      }
+
+      //&::after {
+      //  content: "";
+      //  display: inline-block;
+      //  height: 100%;
+      //  width: 100%;
+      //  position: absolute;
+      //  top: 0;
+      //  left: 0;
+      //  z-index: -1;
+      //  background-color: $color-secondary;
+      //  transition: all .4s;
+      //}
+    }
+
+    &-right {
+      background-color: $color-background-primary;
+      color: $color-secondary;
+      width: 50%;
+      height: 100%;
+      clip-path: polygon(0 0, 100% 0, 0 100%);
+      box-shadow: 2px 2px 8px $color-shadow;
+
+      float: right;
+      position: relative;
+      transition: transform .2s;
+
+      &:hover {
+        color: $color-secondary;
+      }
+    }
+
+    &-left:link,
+    &-left:visited,
+    &-right:link,
+    &-right:visited {
+      text-decoration: none;
+      box-shadow: 2px 2px 8px $color-shadow;  // nie widac...
+    }
+
+    &-left:hover,
+    &-right:hover {
+      text-decoration: none;
+      transform: translateY(-.5rem);
+    }
+
+    &-left:active,
+    &-right:active{
+      text-decoration: none;
+      transform: translateY(.5rem);
+
+      &::after {
+        transform: scale(2);
+        opacity: 0;
+      }
+    }
+  }
+
+  &__text {
+    &-left {
+      position: absolute;
+      top: 15%;
+      left: 66%;
+      transform: translate(-50%, 0);
+    }
+
+    &-right {
+      position: absolute;
+      top: 15%;
+      left: 38%;
+      transform: translate(-50%, 0);
+    }
+  }
+
+  &__img-shape {
+    width: 15rem;
+    height: 15rem;
+    background-color: white;
+    float: left;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__agata {
+    height: 100%;
+    transform: scale(1.1);
+    transition: all .5s;
+    filter: brightness(95%);
+
+    &-caption {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      color: $color-text-primary;
+      text-transform: uppercase;
+      font-size: 1.7rem;
+      text-align: center;
+      opacity: 0;
+      transition: transform .5s;
+      backface-visibility: hidden;
+    }
+  }
+
+  &:nth-child(2):hover {
+    transition: transform .2s;
+  }
+
+  &:nth-child(2):hover &__agata {
+    transform: scale(1.05);
+    filter: blur(2px) brightness(70%);
+
+    &-caption {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+  }
+
+  &__icon-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: 16rem;
+
+    &:after {
+      content: "";
+      width: 15rem;
+      height: 15rem;
+      border-radius: 50%;
+      background-color: $color-primary;
+      position: absolute;
+      top: 20%;
+      left: 6%;
+      z-index: -1;
+      transition: all .4s;
+    }
+
+    &:active::after {
+      transform: scaleX(2) scaleY(2);
+      opacity: 0;
+    }
+  }
+
+
+  .fa-envelope {
+    background-image: linear-gradient(to bottom, $color-background-primary, $color-secondary);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}

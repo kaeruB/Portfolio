@@ -1,0 +1,67 @@
+.project-details-card {
+  background-color: $color-secondary-transparent;
+  height: 35rem;
+  width: 55rem;
+  border-radius: 50%;
+  color: $color-text-primary;
+  margin: 0 2rem 0 2rem;
+
+  display: flex;
+  flex-direction: column;
+  //justify-content: space-around;
+
+
+  &__main-info {
+    background: $color-dark-violet;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &:hover {
+      background-color: $color-shadow;
+    }
+  }
+
+  &__more {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+    color: $color-primary;
+    font-size: $font-size-medium-text;
+  }
+
+  &__title {
+    font-size: $font-size-medium-text;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-size: $font-size-small-text;
+  }
+
+  &__source {
+    //transform: translateY(-3px);
+    transition: transform .3s;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+
+    & a {
+      width: 10rem;
+      background: $color-text-primary;
+      text-decoration: none;
+      color: $color-footer;
+      border-radius: 5%;
+    }
+  }
+}

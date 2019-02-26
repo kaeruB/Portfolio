@@ -1,0 +1,27 @@
+.custom-link {
+  width: 10rem;
+  height: 3rem;
+  text-decoration: none;
+  background: $color-text-primary;
+  color: $color-footer;
+  border-radius: 5%;
+  position: relative;
+
+  &:after {
+    content: "";
+    width: 10rem;
+    height: 3rem;
+    border-radius: 5%;
+    background-color: $color-text-primary;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+  }
+
+  &:active::after {
+    transform: scaleX(2) scaleY(2);
+    opacity: 0;
+  }
+}
