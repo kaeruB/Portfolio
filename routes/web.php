@@ -16,3 +16,10 @@ Route::get('/about', 'PagesController@getAbout');
 Route::get('/backend', 'PagesController@getBackend');
 Route::get('/contact', 'PagesController@getContact');
 Route::get('/frontend', 'PagesController@getFrontend');
+Route::get('/message-sent', 'PagesController@getMessageSent');
+
+// submit jest tez w MessageController, a w contact.blade.php jest submit
+Route::post('/contact/submit', 'MessagesController@submit');
+
+// getMessages jest w MessageController (metoda)
+Route::get('/messages', 'MessagesController@getMessages');

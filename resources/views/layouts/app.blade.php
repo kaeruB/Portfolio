@@ -12,6 +12,7 @@
 <body>
     <header>@yield('header')</header>
     <div class="container">
+        @include('utilities.messages')
         @yield('container')
     </div>
 <footer id="footer" class="text-center">

@@ -13,6 +13,7 @@
 @endsection
 
 @section('container')
+    @include('utilities.home-button')
     <div class="project-section u-center-text u-margin-bottom-small">
         <div class="project-section__container">
             <div class="project-panel project-panel--left">

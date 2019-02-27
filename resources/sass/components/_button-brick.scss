@@ -1,16 +1,19 @@
 .button-brick {
   width: 10rem;
   height: 10rem;
-  background: $color-button;
   border-radius: 10%;
-  color: $color-text-primary;
   font-size: $font-size-medium-text;
   margin: .5rem;
+
+  color: $color-text-primary;
+  box-shadow: 2px 2px 8px $color-shadow;
+  background: $color-button;
 
   &:hover {
     transform: translateY(-.3rem);
     border-radius: 10%;
     background-color: $color-shadow;
+    box-shadow: 4px 4px 8px $color-shadow;
 
     &::before {
       box-shadow: 0 1rem 1rem rgba($color-shadow,.3);

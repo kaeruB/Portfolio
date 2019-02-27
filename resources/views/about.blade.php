@@ -7,6 +7,7 @@
 @endsection
 
 @section('container')
+    @include('utilities.home-button')
     <div class="about">
         <div class="about__row">
             {{--<div class="about__photo-container">--}}
@@ -68,7 +69,7 @@
                             (Feb. 2019 - Present)
                             Continuation of a library development created as a thesis project.
                             <div class="about__thesis about__thesis custom-link">
-                                <a href="/backend" class="">More</a>
+                                <a href="/backend">More</a>
                             </div>
                         </div>
                     </li>

@@ -7,6 +7,7 @@
 @endsection
 
 @section('container')
+    @include('utilities.home-button')
     <div class="contact-section">
         <div class="contact-form dark-background">
             <div class="u-center-text u-margin-bottom-medium">

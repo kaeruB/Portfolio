@@ -25,4 +25,8 @@ class PagesController extends Controller
     public function getFrontend() {
         return view('frontend');
     }
+
+    public function getMessageSent() {
+        return view('message-sent');
+    }
 }

@@ -11,6 +11,8 @@
     padding: 1rem;
     border-radius: 5%;
 
+    box-shadow: 2px 2px 8px $color-shadow;
+
     .send-button:hover {
       transform: translateY(-2px);
     }
@@ -25,6 +27,8 @@
     flex-direction: column;
     padding: 1rem;
     border-radius: 5%;
+
+    box-shadow: 2px 2px 8px $color-shadow;
 
     display: flex;
 
@@ -45,13 +49,13 @@
     &__link:hover,
     &__mail:hover {
       text-decoration: none;
-      color: $color-shadow;;
+      color: $color-shadow;
       transform: translateY(-2px);
     }
 
     &__link:active,
     &__mail:active {
-      color: inherit;
+      color: $color-secondary-dark;
       transform: translateY(2px);
     }
 

@@ -1,6 +1,6 @@
 @extends('layouts.project')
 
-@section('secondary-header') backend @endsection
+@section('secondary-header') frontend @endsection
 
 @section('project-details-more')
     <div class="project-details-card__technologies">
