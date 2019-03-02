@@ -23,8 +23,4 @@ class MessagesController extends Controller
 
         return redirect('/message-sent')->with('success', 'Messgae Sent');
     }
-
-    public function getMessages() {
-
-    }
 }

@@ -182,6 +182,15 @@
     left: 50%;
     transform: translate(-50%, -30%);
     font-size: 16rem;
+    //transition: translate .4s; ??
+
+    &:hover {
+      transform: translate(-50%, -35%);
+    }
+
+    &:active {
+      transform: translate(-50%, -25%);
+    }
 
     &:after {
       content: "";

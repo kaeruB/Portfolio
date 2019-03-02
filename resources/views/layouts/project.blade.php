@@ -18,9 +18,10 @@
         <div class="project-section__container">
             <div class="project-panel project-panel--left">
                 <div class="project-pic left-pic"><img src="/img/nyan1.png"></div>
-                <button class="button-brick"><span class="title">Example title</span></button>
-                <button class="button-brick"><span class="title">Example title</span></button>
-                <button class="button-brick"><span class="title">Example title</span></button>
+                @yield('left-panel-projects')
+                {{--<button class="button-brick"><span class="title">@yield('title1')</span></button>--}}
+                {{--<button class="button-brick"><span class="title">@yield('title2')</span></button>--}}
+                {{--<button class="button-brick"><span class="title">@yield('title3')</span></button>--}}
             </div>
             <div class="project-details-card">
                 <div class="project-details-card__main-info">

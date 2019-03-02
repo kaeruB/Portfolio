@@ -21,5 +21,5 @@ Route::get('/message-sent', 'PagesController@getMessageSent');
 // submit jest tez w MessageController, a w contact.blade.php jest submit
 Route::post('/contact/submit', 'MessagesController@submit');
 
-// getMessages jest w MessageController (metoda)
-Route::get('/messages', 'MessagesController@getMessages');
+// getProjects jest w ProjectsController (metoda)
+Route::get('/backend', 'ProjectsController@getProjects');

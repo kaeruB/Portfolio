@@ -52,6 +52,12 @@
                     <i class="fab fa-github"></i>
                 </a>
             </div>
+            <div class="contact-info__item">
+                <div class="contact-info__label">Dewiantart &nbsp;</div>
+                <a href="https://www.deviantart.com/bogachu" class="contact-info__link custom-link">
+                    <i class="fab fa-deviantart"></i>
+                </a>
+            </div>
         </div>
     </div>
 @endsection
