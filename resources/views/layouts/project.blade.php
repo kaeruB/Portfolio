@@ -44,5 +44,17 @@
 @endsection
 
 @section('script')
-    @yield('script-child')
+    <script type="text/javascript">
+        // If there are ' in the passed description or somewhere in the passed variables there will be an error - to fix!
+        function changeDescription(name, description, technologies, source, link) {
+            document.querySelector('.project-details-card__title').textContent = name;
+            document.querySelector('.project-details-card__description').textContent = description;
+            document.querySelector('.project-details-card__technologies-list').textContent = technologies;
+            document.querySelector('.project-details-card__source a').href = source;
+            if (typeof link !== 'undefined' && link != ""){
+                document.querySelector('.site_url').href = link;
+            }
+        }
+    </script>
+    {{--@yield('script-child')--}}
 @endsection

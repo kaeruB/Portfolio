@@ -5,7 +5,14 @@
 @section('projects-labels')
     @if(count($projects) > 0)
         @foreach($projects as $project)
-            <button class="button-brick"><span class="title">{{$project->name}}</span></button>
+            <button
+                    onclick="changeDescription(
+                            '{{$project->name}}',
+                            '{{$project->description}}',
+                            '{{$project->technology}}',
+                            '{{$project->source_url}}',
+                            '{{$project->site_url}}')"
+                    class="button-brick"><span class="title">{{$project->name}}</span></button>
         @endforeach
     @endif
 @endsection
