@@ -6,41 +6,21 @@
 
     &__container {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+
+      border-radius: 5%;
+      background-color: $color-dark-violet;
+      box-shadow: 2px 2px 8px $color-shadow;
     }
   }
 
   &-panel {
     display: flex;
     flex-direction: column;
+    height: 30rem;
+    justify-content: center;
     //transition: transform .3s;
 
-    &.project-panel--left {
-      position: relative;
-      .left-pic {
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translateY(-24rem) translateX(-2rem);
-
-        img {
-          width: 25rem;
-        }
-      }
-    }
-
-    &.project-panel--right {
-      position: relative;
-      .right-pic {
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translateY(-19rem) translateX(-1rem);
-
-        img {
-          width: 20rem;
-        }
-      }
-    }
+    width: 40%;
   }
 }

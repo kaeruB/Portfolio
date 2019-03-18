@@ -2,15 +2,44 @@
 
 @section('secondary-header') frontend @endsection
 
-@section('project-details-more')
-    <div class="project-details-card__technologies">
-        <h4 class="project-details-card__technologies-title">Used technologies and languages:</h4>
-        <p class="project-details-card__technologies-list">JavaScript</p>
-    </div>
-    <div class="project-details-card__source">
-        <a href="ExampleLink.com">Site URL</a>
-    </div>
-    <div class="project-details-card__source">
-        <a href="ExampleLink.com">Source code</a>
-    </div>
+@section('projects-labels')
+    @if(count($projects) > 0)
+        @foreach($projects as $project)
+            <button class="button-brick"><span class="title">{{$project->name}}</span></button>
+        @endforeach
+    @endif
+@endsection
+
+@section('project-title')
+    @if(count($projects) > 0)
+        {{$projects->first()->name}}
+    @endif
+@endsection
+
+@section('project-description')
+    @if(count($projects) > 0)
+        {{$projects->first()->description}}
+    @endif
+@endsection
+
+@section('technologies')
+    @if(count($projects) > 0)
+        {{$projects->first()->technology}}
+    @endif
+@endsection
+
+@section('project-details-buttons')
+    @if(count($projects) > 0)
+        @if($projects->first()->site_url != null)
+            <div id="site-url" class="project-details-card__source">
+                <a href="{{$projects->first()->site_url}}" class="custom-link">Link</a>
+            </div>
+        @endif
+
+        @if($projects->first()->source_url != null)
+            <div class="project-details-card__source">
+                <a href="{{$projects->first()->source_url}}" class="custom-link">Source code</a>
+            </div>
+        @endif
+    @endif
 @endsection

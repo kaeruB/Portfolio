@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+{{--@section('script')--}}
+    {{--@yield('script-child')--}}
+{{--@endsection--}}
+
 @section('header')
     <div class="u-center-text u-margin-bottom-big">
         <h1 class="heading-primary">My projects</h1>
@@ -7,37 +11,38 @@
             @yield('secondary-header')
         </h2>
     </div>
-    {{--<div class="u-center-text u-margin-bottom-big">--}}
-        {{----}}
-    {{--</div>--}}
 @endsection
 
 @section('container')
     @include('utilities.home-button')
     <div class="project-section u-center-text u-margin-bottom-small">
         <div class="project-section__container">
-            <div class="project-panel project-panel--left">
-                <div class="project-pic left-pic"><img src="/img/nyan1.png"></div>
-                @yield('left-panel-projects')
-                {{--<button class="button-brick"><span class="title">@yield('title1')</span></button>--}}
-                {{--<button class="button-brick"><span class="title">@yield('title2')</span></button>--}}
-                {{--<button class="button-brick"><span class="title">@yield('title3')</span></button>--}}
+            <div class="project-panel">
+                @yield('projects-labels')
             </div>
             <div class="project-details-card">
                 <div class="project-details-card__main-info">
-                    <div class="project-details-card__title">Exaple title</div>
-                    <div class="project-details-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                    <div class="project-details-card__title">
+                        @yield('project-title')
+                    </div>
+                    <div class="project-details-card__description">
+                        @yield('project-description')
+                    </div>
                 </div>
                 <div class="project-details-card__more">
-                    @yield('project-details-more')
+                    <div class="project-details-card__technologies">
+                        <h4 class="project-details-card__technologies-title">Used technologies and languages:</h4>
+                        <p class="project-details-card__technologies-list">
+                            @yield('technologies')
+                        </p>
+                    </div>
+                    @yield('project-details-buttons')
                 </div>
-            </div>
-            <div class="project-panel project-panel--right">
-                <div class="project-pic right-pic"><img src="/img/nyan2.png"></div>
-                <button class="button-brick"><span class="title">Example title</span></button>
-                <button class="button-brick"><span class="title">Example title</span></button>
-                <button class="button-brick"><span class="title">Example title</span></button>
             </div>
         </div>
     </div>
+@endsection
+
+@section('script')
+    @yield('script-child')
 @endsection

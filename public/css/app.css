@@ -10780,11 +10780,10 @@ button:focus,
 }
 
 .button-brick {
-  width: 10rem;
-  height: 10rem;
   border-radius: 10%;
   font-size: 2rem;
   margin: 0.5rem;
+  padding: 0.6rem 0;
   color: #fcf9f6;
   box-shadow: 2px 2px 8px rgba(80, 21, 21, 0.73);
   background: #bdadad;
@@ -10899,22 +10898,14 @@ button:focus,
 }
 
 .project-details-card {
-  height: 35rem;
-  width: 55rem;
-  border-radius: 50%;
   margin: 0 2rem 0 2rem;
-  background-color: #ffb2ae75;
-  color: #fcf9f6;
-  box-shadow: 2px 2px 8px rgba(80, 21, 21, 0.73);
+  min-width: 40rem;
   display: flex;
   flex-direction: column;
+  color: #FCECEA;
 }
 
 .project-details-card__main-info {
-  background: #cc9592;
-  box-shadow: 3px -3px 5px 0px rgba(80, 21, 21, 0.73);
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
   height: 50%;
   display: flex;
   flex-direction: column;
@@ -10926,7 +10917,6 @@ button:focus,
   flex-direction: column;
   justify-content: space-around;
   height: 50%;
-  color: #EE817B;
   font-size: 2rem;
 }
 
@@ -11396,43 +11386,17 @@ button:focus,
 
 .project-section__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  border-radius: 5%;
+  background-color: #cc9592;
+  box-shadow: 2px 2px 8px rgba(80, 21, 21, 0.73);
 }
 
 .project-panel {
   display: flex;
   flex-direction: column;
-}
-
-.project-panel.project-panel--left {
-  position: relative;
-}
-
-.project-panel.project-panel--left .left-pic {
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-transform: translateY(-24rem) translateX(-2rem);
-          transform: translateY(-24rem) translateX(-2rem);
-}
-
-.project-panel.project-panel--left .left-pic img {
-  width: 25rem;
-}
-
-.project-panel.project-panel--right {
-  position: relative;
-}
-
-.project-panel.project-panel--right .right-pic {
-  position: absolute;
-  top: 0;
-  right: 0;
-  -webkit-transform: translateY(-19rem) translateX(-1rem);
-          transform: translateY(-19rem) translateX(-1rem);
-}
-
-.project-panel.project-panel--right .right-pic img {
-  width: 20rem;
+  height: 30rem;
+  justify-content: center;
+  width: 40%;
 }
 

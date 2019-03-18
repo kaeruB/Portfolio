@@ -28,7 +28,7 @@ class DatabaseSeeder extends Seeder
                 'name' => 'Scrapla',
                 'type' => 'backend',
                 'year' => '2019',
-                'description' => 'It\'s a library for content analysis based on web scraping solutions that I\'ve created with Kinga Kaczmarczyk as thesis project. After graduation we continue the development as a university research project (current employment).',
+                'description' => 'It is a library for content analysis based on web scraping solutions that I have created with Kinga Kaczmarczyk as thesis project. After graduation we continue the development as a university research project (current employment).',
                 //'source_url' => "",
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime()
@@ -52,7 +52,7 @@ class DatabaseSeeder extends Seeder
                 'name' => 'Operating systems C projects',
                 'type' => 'backend',
                 'year' => '2017',
-                'description' => 'During my second year of my engineering studies I\'ve broaden my knowledge about creating sub-processes, operations on files, signals and much more what I\'ve practiced building small projects in C language on Linux. Example one under the link below.',
+                'description' => 'During my second year of my engineering studies I have broaden my knowledge about creating sub-processes, operations on files, signals and much more what I have practiced building small projects in C language on Linux. Example one under the link below.',
                 'source_url' => "https://github.com/kaeruB/Operating_Systems_Signals.git",
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime()
@@ -88,7 +88,7 @@ class DatabaseSeeder extends Seeder
                 'name' => 'KITron',
                 'type' => 'backend',
                 'year' => '2018',
-                'description' => 'Game created during 2 days university\'s hackaton - we worked in a group of 6 students and completed the task with great success. I was responsible for client site of application along with Karolina Biela.',
+                'description' => 'Game created during 2 days university hackaton - we worked in a group of 6 students and completed the task with great success. I was responsible for client site of application along with Karolina Biela.',
                 'source_url' => "https://github.com/bielakarolina/KITron.git",
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime()
