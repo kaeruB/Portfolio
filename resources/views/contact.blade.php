@@ -10,7 +10,7 @@
     @include('utilities.home-button')
     <div class="contact-section">
         <div class="contact-form dark-background">
-            <div class="u-center-text u-margin-bottom-medium">
+            <div class="u-center-text u-margin-bottom-medium u-margin-top-medium">
                 <h2 class="contact-form__title"><i class="fas fa-envelope-open-text"></i> Contact form</h2>
             </div>
 
@@ -27,13 +27,13 @@
                     {{Form::label('message', 'Message', ['class' => 'form-field__label'])}}
                     {{Form::textarea('message', '', ['class' => 'form-field__text form-control', 'placeholder' => 'Enter a message'])}}
                 </div>
-                <div>
+                <div class="u-center-text">
                     {{Form::submit('Send', ['class' => 'button send-button custom-link'])}}
                 </div>
             {!! Form::close() !!}
         </div>
         <div class="contact-info dark-background">
-            <div class="u-center-text u-margin-bottom-medium">
+            <div class="u-center-text u-margin-bottom-medium u-margin-top-medium">
                 <h2 class="contact-info__title"> <i class="fas fa-external-link-square-alt"></i> Links</h2>
             </div>
             <div class="contact-info__item">

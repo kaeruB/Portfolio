@@ -42,7 +42,3 @@
         </div>
     @endif
 @endsection
-
-{{--@section('script-child')--}}
-
-{{--@endsection--}}

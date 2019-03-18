@@ -1,9 +1,5 @@
 @extends('layouts.app')
 
-{{--@section('script')--}}
-    {{--@yield('script-child')--}}
-{{--@endsection--}}
-
 @section('header')
     <div class="u-center-text u-margin-bottom-big">
         <h1 class="heading-primary">My projects</h1>
@@ -56,5 +52,4 @@
             }
         }
     </script>
-    {{--@yield('script-child')--}}
 @endsection

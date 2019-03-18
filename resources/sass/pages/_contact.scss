@@ -29,13 +29,16 @@
     border-radius: 5%;
 
     box-shadow: 2px 2px 8px $color-shadow;
-
     display: flex;
 
     &__item {
       display: flex;
       margin-bottom: 1rem;
       //transition: transform 1s;
+    }
+
+    &__label {
+      width: 30%;
     }
 
     &__mail {
@@ -67,4 +70,3 @@
     font-style: $font-size-secondary-heading;
   }
 }
-

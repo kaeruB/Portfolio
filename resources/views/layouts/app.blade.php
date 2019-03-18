@@ -8,8 +8,6 @@
 
     <title>Agata Izabela Bogacz</title>
     <link rel="stylesheet" href="/css/app.css">
-
-    {{--@yield('script')--}}
 </head>
     <body>
         <header>@yield('header')</header>
