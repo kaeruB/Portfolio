@@ -5,21 +5,41 @@
 
   &__work {
     display: flex;
+    padding: 0 3rem;
 
-    &:not(:last-child) {
-      border-bottom: 1px #dca69f solid; //$color-secondary-transparent
-    }
+    &--container {
+      flex: 1 1 0;
+      min-height: 35rem;
+      border-radius: 3px;
+      margin: 2rem;
+      padding: 1rem;
 
-    &:not(:first-child) {
-      padding-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+
+      color: $color-primary;
+      font-size: $font-size-primary-heading;
+      font-weight: bold;
+
+      &.agh {
+        background-image: linear-gradient(to bottom, #f7ebe9b5, #fff), url(/img/d17.jpg);
+      }
+      &.andea {
+        background-image: linear-gradient(to bottom, #f7ebe9b5, #fff), url(/img/andea.jpg);
+      }
+      background-size: cover;
+
+      span {
+        font-size: $font-size-small-text;
+        margin: 2rem;
+      }
     }
 
     &--header {
-      width: 30%;
-    }
-
-    &--content {
-      width: 70%;
+      border-bottom: 1px $color-secondary-transparent solid;
+      text-align: center;
     }
   }
 

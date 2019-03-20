@@ -14,46 +14,40 @@
             <h2 class="about__subtitle"><i class="far fa-building"></i> Work experience</h2>
 
             <div class="about__work">
-                <div class="about__work--header">
-                    <ul>
-                        <li>AGH University of Science and Technology</li>
-                        <li>(Feb. 2019 - Present)</li>
-                    </ul>
-                </div>
-                <div class="about__work--content">
-                    <ul>
-                        <li>
-                            <div class="about__details--title">Description:</div>
-                            <div class="about__details--desc">Continuation of a library development created as a thesis project.</div>
-                        </li>
+                <div class="about__work--container agh">
+                    <div class="about__work--header">AGH University of Science and Technology</div>
+                    <span>February 2019 - Present</span>
+                    {{--<div class="about__work--content">--}}
+                    {{--<ul>--}}
+                    {{--<li>--}}
+                    {{--<div class="about__details--title">Description:</div>--}}
+                    {{--<div class="about__details--desc">Continuation of a library development created as a thesis project.</div>--}}
+                    {{--</li>--}}
 
-                        <li>
-                            <div class="about__details--title">Technologies:</div>
-                            <div class="about__details--desc">sbt,Scala,Selenium,Akka,Git</div>
-                        </li>
-                    </ul>
+                    {{--<li>--}}
+                    {{--<div class="about__details--title">Technologies:</div>--}}
+                    {{--<div class="about__details--desc">sbt,Scala,Selenium,Akka,Git</div>--}}
+                    {{--</li>--}}
+                    {{--</ul>--}}
+                    {{--</div>--}}
                 </div>
-            </div>
 
-            <div class="about__work">
-                <div class="about__work--header">
-                    <ul>
-                        <li>Andea</li>
-                        <li>(Apr. 2018 - Feb. 2019)</li>
-                    </ul>
-                </div>
-                <div class="about__work--content">
-                    <ul>
-                        <li>
-                            <div class="about__details--title">Description:</div>
-                            <div class="about__details--desc">Developing solutions for Manufacturing Execution Systems, responsible for implementing back end for new systems, creating user interfaces and upgrading existing Andea’s programs.</div>
-                        </li>
+                <div class="about__work--container andea">
+                    <div class="about__work--header">Andea</div>
+                    <span>April 2018 - February 2019</span>
+                    {{--<div class="about__work--content">--}}
+                    {{--<ul>--}}
+                    {{--<li>--}}
+                    {{--<div class="about__details--title">Description:</div>--}}
+                    {{--<div class="about__details--desc">Developing solutions for Manufacturing Execution Systems, responsible for implementing back end for new systems, creating user interfaces and upgrading existing Andea’s programs.</div>--}}
+                    {{--</li>--}}
 
-                        <li>
-                            <div class="about__details--title">Technologies:</div>
-                            <div class="about__details--desc">Microsoft SQL Server, SQL Server Reporting Services and Delmia Apriso products, T-SQL, C\#, JavaScript, CSS</div>
-                        </li>
-                    </ul>
+                    {{--<li>--}}
+                    {{--<div class="about__details--title">Technologies:</div>--}}
+                    {{--<div class="about__details--desc">Microsoft SQL Server, SQL Server Reporting Services and Delmia Apriso products, T-SQL, C\#, JavaScript, CSS</div>--}}
+                    {{--</li>--}}
+                    {{--</ul>--}}
+                    {{--</div>--}}
                 </div>
             </div>
         </div>
