@@ -198,7 +198,7 @@
   .hobbies {
     display: flex;
     flex-direction: column;
-    height: 80rem;
+    height: 57rem;
 
     padding: 2rem;
 
@@ -226,6 +226,7 @@
       flex-direction: column;
       height: 100%;
       align-items: center;
+      text-align: center;
 
       &-1 {
         transform: translateY(20%);
@@ -270,17 +271,43 @@
       left: 20%;
       top: 10rem;
     }
+
+    &__drawing-4 {
+      transform: scale(.7);
+      left: 55%;
+      top: 17rem;
+    }
   }
 
   .ending {
     height: 40rem;
     display: flex;
     justify-content: center;
-    transform: translateY(-6rem);
+    position: relative;
 
     &__img {
       height: 100%;
       background-size: cover;
+    }
+
+    &__cloud {
+      height: 55%;
+      background-image: url(/img/chmurka.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      top: 0;
+      left: 50%;
+      position: absolute;
+
+      display: flex;
+    }
+
+    &__title {
+      font-size: $font-size-small-text;
+      color: black;
+      transform: translateY(20%);
+      padding: 2rem;
     }
   }
 }

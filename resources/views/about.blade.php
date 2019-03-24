@@ -60,33 +60,35 @@
                 <span class="about__title language__polish language__left">I can speak Polish, English and... &nbsp; &nbsp; <i class="fas fa-hand-point-right"></i></span>
                 <div class="japanese language__right">
                     <img class="japanese__img" src="/img/certyfikat.jpg" alt="N3 Japanese Certificate">
-                    <figcaption class="japanese__caption">I can speak Japanese <i class="far fa-smile-beam"></i> </figcaption>
+                    <figcaption class="japanese__caption">Japanese <i class="far fa-smile-beam"></i> </figcaption>
                 </div>
         </div>
 
-        <div class="about__subcontainer hobbies">
+        <div class="about__subcontainer hobbies light-background">
             <div class="hobbies__row hobbies__row-1">
-                <div class="hobbies__row--left">
-                    <span class="hobbies__title hobbies__title-1">I draw portraits...</span>
-                </div>
                 <div class="hobbies__row--right hobbies__drawings">
                     <img class="hobbies__drawing hobbies__drawing-1" src="/img/jackie.jpg" alt="Jackie Chan - drawing">
                     <img class="hobbies__drawing hobbies__drawing-2" src="/img/gem2.jpg" alt="GEM - drawing">
                     <img class="hobbies__drawing hobbies__drawing-3" src="/img/yonghwa.jpg" alt="Yonghwa - drawing">
+                    <img class="hobbies__drawing hobbies__drawing-4" src="/img/shuji.jpg" alt="Japanese character">
                 </div>
-            </div>
-            <div class="hobbies__row hobbies__row-2">
                 <div class="hobbies__row--left">
-                    <img class="" src="/img/gitara.png" alt="Me, playing the guitar">
-                </div>
-                <div class="hobbies__row--right">
-                    <span class="hobbies__title hobbies__title-2">...and I play the guitar.</span>
+                    <span class="hobbies__title hobbies__title-1">I draw portraits and I study Japanese calligraphy <i class="far fa-smile-beam"></i> </span>
                 </div>
             </div>
+            {{--<div class="hobbies__row hobbies__row-2">--}}
+                {{--<div class="hobbies__row--left">--}}
+                    {{--<img class="" src="/img/gitara.png" alt="Me, playing the guitar">--}}
+                {{--</div>--}}
+                {{--<div class="hobbies__row--right">--}}
+                    {{--<span class="hobbies__title hobbies__title-2">...and I play the guitar.</span>--}}
+                {{--</div>--}}
+            {{--</div>--}}
         </div>
 
         <div class="about__subcontainer ending dark-background">
             <img class="ending__img" src="/img/nyanko.png" alt="Cat">
+            <div class="ending__cloud"><span class="about__title ending__title">Thank you! にゃん！</span></div>
         </div>
     </div>
 @endsection

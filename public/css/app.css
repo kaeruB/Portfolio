@@ -11386,7 +11386,7 @@ button:focus,
 .about .hobbies {
   display: flex;
   flex-direction: column;
-  height: 80rem;
+  height: 57rem;
   padding: 2rem;
 }
 
@@ -11414,6 +11414,7 @@ button:focus,
   flex-direction: column;
   height: 100%;
   align-items: center;
+  text-align: center;
 }
 
 .about .hobbies__title-1 {
@@ -11462,17 +11463,42 @@ button:focus,
   top: 10rem;
 }
 
+.about .hobbies__drawing-4 {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  left: 55%;
+  top: 17rem;
+}
+
 .about .ending {
   height: 40rem;
   display: flex;
   justify-content: center;
-  -webkit-transform: translateY(-6rem);
-          transform: translateY(-6rem);
+  position: relative;
 }
 
 .about .ending__img {
   height: 100%;
   background-size: cover;
+}
+
+.about .ending__cloud {
+  height: 55%;
+  background-image: url(/img/chmurka.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 50%;
+  position: absolute;
+  display: flex;
+}
+
+.about .ending__title {
+  font-size: 2rem;
+  color: black;
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+  padding: 2rem;
 }
 
 .contact-section {
