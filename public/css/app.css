@@ -10679,7 +10679,7 @@ body {
 body {
   padding: 3rem;
   letter-spacing: 1.1px;
-  color: rgba(246, 175, 170, 0.73);
+  color: #f6afaa;
   font-family: "Shadows Into Light", cursive;
 }
 
@@ -10689,7 +10689,7 @@ header {
 }
 
 .heading-primary {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   text-transform: uppercase;
   display: inline-block;
   position: absolute;
@@ -10704,7 +10704,7 @@ header {
 }
 
 .heading-secondary {
-  font-size: 2.5rem;
+  font-size: 4rem;
   display: inline-block;
   position: absolute;
   top: 76%;
@@ -10757,7 +10757,7 @@ header {
 
 .light-background {
   background: #fcf9f6;
-  color: rgba(238, 129, 123, 0.71);
+  color: #ee817b;
 }
 
 .dark-background {
@@ -10785,7 +10785,7 @@ button:focus,
 
 .button-brick {
   border-radius: 3px;
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 0.5rem;
   padding: 0.6rem 0;
   color: #fcf9f6;
@@ -10855,7 +10855,7 @@ button:focus,
   position: fixed;
   left: 15%;
   top: 2rem;
-  font-size: 2rem;
+  font-size: 3rem;
   color: rgba(80, 21, 21, 0.73);
   background: #fcf9f6;
   border-radius: 25%;
@@ -10863,7 +10863,7 @@ button:focus,
 
 .home-button:hover,
 .home-button:active {
-  color: rgba(238, 129, 123, 0.71);
+  color: #ee817b;
 }
 
 .home-button:hover {
@@ -10916,16 +10916,16 @@ button:focus,
   flex-direction: column;
   justify-content: space-around;
   height: 50%;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .project-details-card__title {
-  font-size: 2rem;
+  font-size: 3rem;
   text-transform: uppercase;
 }
 
 .project-details-card__description {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .project-details-card__source {
@@ -10953,7 +10953,7 @@ button:focus,
 }
 
 .round-card {
-  background-color: rgba(238, 129, 123, 0.71);
+  background-color: #ee817b;
   border-radius: 50%;
   width: 30rem;
   height: 30rem;
@@ -10998,7 +10998,7 @@ button:focus,
 
 .round-card__projects-left {
   color: #FCECEA;
-  background-color: rgba(246, 175, 170, 0.73);
+  background-color: #f6afaa;
   width: 50%;
   height: 100%;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%);
@@ -11016,7 +11016,7 @@ button:focus,
 
 .round-card__projects-right {
   background-color: #FCECEA;
-  color: rgba(246, 175, 170, 0.73);
+  color: #f6afaa;
   width: 50%;
   height: 100%;
   -webkit-clip-path: polygon(0 0, 100% 0, 0 100%);
@@ -11030,7 +11030,7 @@ button:focus,
 }
 
 .round-card__projects-right:hover {
-  color: rgba(246, 175, 170, 0.73);
+  color: #f6afaa;
 }
 
 .round-card__projects-left:link,
@@ -11162,7 +11162,7 @@ button:focus,
   width: 15rem;
   height: 15rem;
   border-radius: 50%;
-  background-color: #f2a09b;
+  background-color: #ee817b;
   position: absolute;
   top: 20%;
   left: 6%;
@@ -11177,7 +11177,7 @@ button:focus,
 }
 
 .round-card .fa-envelope {
-  background-image: linear-gradient(to bottom, #FCECEA, rgba(246, 175, 170, 0.73));
+  background-image: linear-gradient(to bottom, #FCECEA, #f6afaa);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -11190,84 +11190,262 @@ button:focus,
 .about {
   display: flex;
   flex-direction: column;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
-.about__work {
-  display: flex;
-  padding: 0 3rem;
-}
-
-.about__work--container {
-  flex: 1 1 0;
-  min-height: 35rem;
+.about__subcontainer {
   border-radius: 3px;
-  margin: 2rem;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  color: rgba(238, 129, 123, 0.71);
-  font-size: 3.5rem;
-  font-weight: bold;
-  background-size: cover;
-}
-
-.about__work--container.agh {
-  background-image: linear-gradient(to bottom, #f7ebe9b5, #fff), url(/img/d17.jpg);
-}
-
-.about__work--container.andea {
-  background-image: linear-gradient(to bottom, #f7ebe9b5, #fff), url(/img/andea.jpg);
-}
-
-.about__work--container span {
-  font-size: 1.5rem;
-  margin: 2rem;
-}
-
-.about__work--header {
-  border-bottom: 1px #ffb2ae75 solid;
-  text-align: center;
-}
-
-.about__subtitle {
-  font-size: 2.5rem;
-  text-align: center;
-  padding-bottom: 2rem;
-}
-
-.about__container {
-  margin: 0.5rem;
-  padding: 1rem;
-  border-radius: 1%;
+  padding: 0 3rem;
   box-shadow: 2px 2px 8px rgba(80, 21, 21, 0.73);
 }
 
-.about ul {
-  list-style: none;
-}
-
-.about ul li {
+.about .education {
+  height: 40rem;
   display: flex;
 }
 
-.about ul li {
+.about .education__img {
+  height: 90%;
+  background-size: cover;
+  -webkit-transform: translateY(6rem);
+          transform: translateY(6rem);
+}
+
+.about .education__cloud {
+  height: 55%;
+  background-image: url(/img/chmurka.png);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.about .education__title--1 {
+  align-self: center;
+  padding-top: 2rem;
+}
+
+.about .education__title--2 {
+  font-size: 2rem;
+  padding: 3.5rem;
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
+
+.about .work {
+  height: 80rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.about .work__det-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.about .work__agh {
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.about .work__agh .agh__img {
+  background-image: linear-gradient(to bottom, #ffb2ae75, #ffb2ae75), url(/img/kingata3.jpg);
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+}
+
+.about .work__agh .agh__img:hover {
+  background-image: url(/img/kingata3.jpg);
+}
+
+.about .work__andea {
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.about .work__andea .andea__img {
+  background-image: linear-gradient(to bottom, #ffb2ae75, #ffb2ae75), url(/img/andea3.jpg);
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+}
+
+.about .work__andea .andea__img:hover {
+  background-image: url(/img/andea3.jpg);
+}
+
+.about .work__job-name {
+  font-weight: bold;
+}
+
+.about .work__period {
+  font-size: 2rem;
+}
+
+.about .work__technologies {
+  display: flex;
   justify-content: center;
+  margin: 2rem;
+}
+
+.about .work__technology {
+  font-size: 2rem;
+  background: #ee817b;
+  color: #fcf9f6;
+  border-radius: 50%;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.about .work__description {
+  font-size: 2rem;
   text-align: center;
 }
 
-.about__details--title {
-  color: rgba(246, 175, 170, 0.73);
+.about .language {
+  height: 80rem;
+}
+
+.about .language__polish {
+  width: 50%;
+}
+
+.about .language__english {
+  width: 50%;
+}
+
+.about .language .poland {
+  background-image: linear-gradient(to bottom, #ffb2ae75, #ffb2ae75), url(/img/polski.jpg);
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+}
+
+.about .language .poland:hover {
+  background-image: url(/img/polski.jpg);
+}
+
+.about .language .japanese {
+  height: 100%;
+  position: relative;
+}
+
+.about .language .japanese__img {
+  height: 100%;
+  background-size: cover;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  transition: all 0.5s;
+  -webkit-filter: brightness(95%);
+          filter: brightness(95%);
+}
+
+.about .language .japanese__caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  color: #fcf9f6;
   text-transform: uppercase;
-  padding-right: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  opacity: 0;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.about .language .japanese:hover .japanese__img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-filter: blur(2px) brightness(70%);
+          filter: blur(2px) brightness(70%);
+}
+
+.about .language .japanese:hover .japanese__caption {
+  opacity: 1;
+}
+
+.about .language__row {
+  height: 35rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about .hobbies {
+  display: flex;
+  flex-direction: column;
+  height: 100rem;
+  padding: 2rem;
+}
+
+.about .hobbies__row {
+  display: flex;
+  height: 100%;
+}
+
+.about .hobbies__row--left,
+.about .hobbies__row--right {
+  width: 50%;
+}
+
+.about .hobbies__title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.about .hobbies__drawings {
+  position: relative;
+}
+
+.about .hobbies__drawing {
+  width: 55%;
+  position: absolute;
+  z-index: 10;
+  transition: all 0.2s;
+  outline-offset: 2rem;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.about .hobbies__drawing:hover {
+  outline: 1.5rem solid #ee817b;
+  -webkit-transform: scale(1) translateY(-0.5rem);
+          transform: scale(1) translateY(-0.5rem);
+  box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.5);
+  z-index: 20;
+}
+
+.about .hobbies__drawing-1 {
+  left: 0;
+  top: -2rem;
+}
+
+.about .hobbies__drawing-2 {
+  right: 0;
+  top: 2rem;
+}
+
+.about .hobbies__drawing-3 {
+  left: 20%;
+  top: 10rem;
 }
 
 .contact-section {
   display: flex;
   align-items: stretch;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .contact-form {
@@ -11320,7 +11498,7 @@ button:focus,
   color: #928484;
   border-radius: 4px;
   position: relative;
-  font-size: 3.5rem;
+  font-size: 4.5rem;
 }
 
 .contact-info__item:after {
@@ -11364,7 +11542,7 @@ button:focus,
 .contact-form__title,
 .contact-info__title {
   text-transform: uppercase;
-  font-style: 2.5rem;
+  font-style: 4rem;
 }
 
 .form-field__label {
@@ -11372,7 +11550,7 @@ button:focus,
 }
 
 .form-field__text {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .card-section {

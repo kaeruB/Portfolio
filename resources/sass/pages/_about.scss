@@ -1,76 +1,406 @@
 .about {
   display: flex;
   flex-direction: column;
+
   font-size: $font-size-medium-text;
 
-  &__work {
-    display: flex;
+  &__subcontainer {
+    border-radius: 3px;
     padding: 0 3rem;
+    box-shadow: 2px 2px 8px $color-shadow;
+  }
 
-    &--container {
-      flex: 1 1 0;
-      min-height: 35rem;
-      border-radius: 3px;
-      margin: 2rem;
-      padding: 1rem;
+  &__title {
 
+  }
+
+  .education {
+    height: 40rem;
+    display: flex;
+
+    &__img {
+      height: 90%;
+      background-size: cover;
+      transform: translateY(6rem);
+    }
+
+    &__cloud {
+      height: 55%;
+      background-image: url(/img/chmurka.png);
+      background-size: cover;
+
+      display: flex;
+      align-items: center;
+    }
+
+    &__title--1 {
+      align-self: center;
+      padding-top: 2rem;
+    }
+
+    &__title--2 {
+      font-size: $font-size-small-text;
+      padding: 3.5rem;
+      transform: translateY(-1rem);
+    }
+  }
+
+  .work {
+    height: 80rem;
+    display: flex;
+    flex-direction: column;
+
+    &__det-container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-end;
+      width: 50%;
+    }
 
-      color: $color-primary;
-      font-size: $font-size-primary-heading;
-      font-weight: bold;
+    &__agh {
+      height: 50%;
+      display: flex;
+      align-items: center;
 
-      &.agh {
-        background-image: linear-gradient(to bottom, #f7ebe9b5, #fff), url(/img/d17.jpg);
-      }
-      &.andea {
-        background-image: linear-gradient(to bottom, #f7ebe9b5, #fff), url(/img/andea.jpg);
-      }
-      background-size: cover;
+      .agh__img {
+        background-image: linear-gradient(to bottom, $color-secondary-transparent, $color-secondary-transparent), url(/img/kingata3.jpg);
+        background-size: cover;
+        width: 50%;
+        height: 100%;
 
-      span {
-        font-size: $font-size-small-text;
-        margin: 2rem;
+        &:hover {
+          background-image: url(/img/kingata3.jpg);
+        }
       }
     }
 
-    &--header {
-      border-bottom: 1px $color-secondary-transparent solid;
+    &__andea {
+      height: 50%;
+      display: flex;
+      align-items: center;
+
+      .andea__img {
+        background-image: linear-gradient(to bottom, $color-secondary-transparent, $color-secondary-transparent), url(/img/andea3.jpg);
+        background-size: cover;
+        width: 50%;
+        height: 100%;
+
+        &:hover {
+          background-image: url(/img/andea3.jpg);
+        }
+      }
+    }
+
+    &__title--1 {
+
+    }
+
+    &__title--2 {
+
+    }
+
+    &__job-name {
+      font-weight: bold;
+    }
+
+    &__period {
+      font-size: $font-size-small-text;
+    }
+
+    &__technologies {
+      display: flex;
+      justify-content: center;
+      margin: 2rem;
+    }
+
+    &__technology {
+      //flex-direction: ;
+
+      font-size: $font-size-small-text;
+      background: $color-primary;
+      color: $color-text-primary;
+
+      border-radius: 50%;
+      margin: 1rem;
+      padding: .5rem;
+
+    }
+
+    &__description {
+      font-size: $font-size-small-text;
       text-align: center;
     }
   }
 
-  &__subtitle {
-    font-size: $font-size-secondary-heading;
-    text-align: center;
-    padding-bottom: 2rem;
-  }
+  .language {
+    height: 80rem;
 
-  &__container {
-    margin: .5rem;
-    padding: 1rem;
-    border-radius: 1%;
-    box-shadow: 2px 2px 8px $color-shadow;
-  }
+    &__polish {
+      width: 50%;
+      //align-self: center;
+    }
 
-  ul {
-    list-style: none;
-    li {
+    &__english {
+      width: 50%;
+    }
+
+    .poland {
+      background-image: linear-gradient(to bottom, $color-secondary-transparent, $color-secondary-transparent), url(/img/polski.jpg);
+      background-size: cover;
+      width: 50%;
+      height: 100%;
+
+      &:hover {
+        background-image: url(/img/polski.jpg);
+      }
+    }
+
+    .japanese {
+      height: 100%;
+      position: relative;
+
+      &__img {
+        height: 100%;
+        background-size: cover;
+
+        transform: scale(1.1);
+        transition: all 0.5s;
+        filter: brightness(95%);
+      }
+
+      &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        color: #fcf9f6;
+        text-transform: uppercase;
+        font-size: $font-size-small-text;
+        text-align: center;
+        opacity: 0;
+        transition: transform .5s;
+        backface-visibility: hidden;
+      }
+
+      &:hover {
+        .japanese__img {
+          transform: scale(1.05);
+          filter: blur(2px) brightness(70%);
+        }
+
+        .japanese__caption {
+          opacity: 1;
+          //transform: translate(-50%, 0);
+        }
+      }
+    }
+
+    &__row {
+      height: 35rem;
+
       display: flex;
+      //justify-content: center;
+
+      align-items: center;
+      justify-content: center;
+
     }
   }
 
-  ul li {
-    justify-content: center;
-    text-align: center;
+  .hobbies {
+    display: flex;
+    flex-direction: column;
+    height: 100rem;
+
+    padding: 2rem;
+
+    &__row {
+      display: flex;
+
+      height: 100%;
+    }
+
+    &__row--left,
+    &__row--right {
+      width: 50%;
+    }
+
+    &__title {
+      display: flex;
+      flex-direction: column;
+
+      text-align: center;
+      justify-content: center;
+
+      height: 100%;
+    }
+
+
+    &__drawings {
+      position: relative;
+    }
+
+    &__drawing {
+      width: 55%;
+      position: absolute;
+      z-index: 10;
+      transition: all .2s;
+      outline-offset: 2rem;
+      transform: scale(.9);
+
+      &:hover {
+        outline: 1.5rem solid $color-primary;
+        transform: scale(1) translateY(-.5rem);
+        box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.5);
+        z-index: 20;
+      }
+    }
+
+    &__drawing-1 {
+      left: 0;
+      top: -2rem;
+    }
+
+    &__drawing-2 {
+      right: 0;
+      top: 2rem;
+    }
+
+    &__drawing-3 {
+      left: 20%;
+      top: 10rem;
+    }
+
   }
 
-  &__details--title {
-    color: $color-secondary;
-    text-transform: uppercase;
-    padding-right: 1rem;
-  }
+  //.hobbies {
+  //  display: flex;
+  //  height: 100rem;
+  //  flex-wrap: wrap;
+  //
+  //  &__title,
+  //  &__drawing {
+  //    width: 50%;
+  //
+  //    display: flex;
+  //    flex-direction: column;
+  //
+  //    text-align: center;
+  //    justify-content: center;
+  //  }
+  //
+  //  &__drawing {
+  //    height: 50%;
+  //    background-size: cover;
+  //  }
+  //
+  //  &__drawing-1 {
+  //    background-image: linear-gradient(to bottom, $color-secondary-transparent, $color-secondary-transparent), url(/img/jackie.jpg);
+  //  }
+  //
+  //  &__drawing-2 {
+  //    background-image: linear-gradient(to bottom, $color-secondary-transparent, $color-secondary-transparent), url(/img/yonghwa.jpg);
+  //  }
+  //
+  //  &__drawing-3 {
+  //    background-image: linear-gradient(to bottom, $color-secondary-transparent, $color-secondary-transparent), url(/img/matsuyama.jpg);
+  //  }
+  //
+  //  &__drawing-4 {
+  //
+  //  }
+  //}
+
+  //"/img/agh.png"
+  //display: flex;
+  //flex-direction: column;
+  //font-size: $font-size-medium-text;
+  //
+  //&__work {
+  //  display: flex;
+  //  padding: 0 3rem;
+  //
+  //  &--container {
+  //    flex: 1 1 0;
+  //    min-height: 35rem;
+  //    border-radius: 3px;
+  //    margin: 2rem;
+  //    padding: 1rem;
+  //    color: transparent;
+  //
+  //    display: flex;
+  //    flex-direction: column;
+  //    align-items: center;
+  //    //justify-content: flex-end;
+  //
+  //    font-size: $font-size-primary-heading;
+  //    font-weight: bold;
+  //
+  //    &.agh {
+  //      background-image: linear-gradient(to bottom, #f7ebe9b5, #fff), url(/img/d17.jpg);
+  //    }
+  //    &.andea {
+  //      background-image: linear-gradient(to bottom, #f7ebe9b5, #fff), url(/img/andea.jpg);
+  //    }
+  //    background-size: cover;
+  //
+  //    span {
+  //      font-size: $font-size-small-text;
+  //      margin: 2rem;
+  //      text-align: center;
+  //    }
+  //
+  //    &:hover {
+  //      color: $color-primary;
+  //      background: $color-text-primary;
+  //    }
+  //  }
+  //
+  //  &--technologies {
+  //    font-size: $font-size-medium-text;
+  //    text-align: center;
+  //
+  //    display: flex;
+  //
+  //    div {
+  //      margin: 1rem;
+  //    }
+  //  }
+  //
+  //  &--header {
+  //    border-bottom: 1px $color-secondary-transparent solid;
+  //    text-align: center;
+  //  }
+  //}
+  //
+  //&__subtitle {
+  //  font-size: $font-size-secondary-heading;
+  //  text-align: center;
+  //  padding-bottom: 2rem;
+  //}
+  //
+  //&__container {
+  //  margin: .5rem;
+  //  padding: 1rem;
+  //  border-radius: 1%;
+  //  box-shadow: 2px 2px 8px $color-shadow;
+  //}
+  //
+  //ul {
+  //  list-style: none;
+  //  li {
+  //    display: flex;
+  //  }
+  //}
+  //
+  //ul li {
+  //  justify-content: center;
+  //  text-align: center;
+  //}
+  //
+  //&__details--title {
+  //  color: $color-secondary;
+  //  text-transform: uppercase;
+  //  padding-right: 1rem;
+  //}
 }
