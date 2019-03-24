@@ -10,9 +10,14 @@
     @include('utilities.home-button')
     <div class="about">
         <div class="about__subcontainer education dark-background">
-            <img class="education__img" src="/img/agh.png" alt="AGH">
-            <div class="education__cloud"><span class="about__title education__title--2">Master's degree in 2020!</span></div>
-            <span class="about__title education__title--1">I'm a Computer Science Engineer...</span>
+            <div class="education__left">
+                <img class="education__img" src="/img/agh.png" alt="AGH">
+                <div class="education__cloud"><span class="about__title education__title--2">No more homework attack!</span></div>
+            </div>
+            <div class="education__right">
+                <span class="about__title education__title--1">I'm a Computer Science Engineer...</span>
+                <span class="about__title education__title--3">Master's degree in 2020.</span>
+            </div>
         </div>
         <div class="about__subcontainer work light-background">
 
@@ -51,25 +56,18 @@
         </div>
 
         <div class="about__subcontainer language">
-            <div class="language__row">
-                <span class="about__title language__polish">My mother tongue is Polish but...</span>
-                <div class="poland">&nbsp;</div>
-            </div>
-            <div class="language__row">
-                <div class="japanese">
-                    <img class="japanese__img" src="/img/certyfikat.png" alt="N3 Japanese Certificate">
-                    <figcaption class="japanese__caption">...I can speak Japanese...</figcaption>
+
+                <span class="about__title language__polish language__left">I can speak Polish, English and... &nbsp; &nbsp; <i class="fas fa-hand-point-right"></i></span>
+                <div class="japanese language__right">
+                    <img class="japanese__img" src="/img/certyfikat.jpg" alt="N3 Japanese Certificate">
+                    <figcaption class="japanese__caption">I can speak Japanese <i class="far fa-smile-beam"></i> </figcaption>
                 </div>
-
-                <span class="about__title language__english">...and I'm fluent in English as well!</span>
-            </div>
-
         </div>
 
         <div class="about__subcontainer hobbies">
-            <div class="hobbies__row">
+            <div class="hobbies__row hobbies__row-1">
                 <div class="hobbies__row--left">
-                    <span class="about__title hobbies__title">I draw portraits...</span>
+                    <span class="hobbies__title hobbies__title-1">I draw portraits...</span>
                 </div>
                 <div class="hobbies__row--right hobbies__drawings">
                     <img class="hobbies__drawing hobbies__drawing-1" src="/img/jackie.jpg" alt="Jackie Chan - drawing">
@@ -77,123 +75,18 @@
                     <img class="hobbies__drawing hobbies__drawing-3" src="/img/yonghwa.jpg" alt="Yonghwa - drawing">
                 </div>
             </div>
-            <div class="hobbies__row">
+            <div class="hobbies__row hobbies__row-2">
                 <div class="hobbies__row--left">
-                    {{--<img class="" src="/img/.jpg" alt="Me, playing the guitar">--}}
+                    <img class="" src="/img/gitara.png" alt="Me, playing the guitar">
                 </div>
                 <div class="hobbies__row--right">
-                    <span class="hobbies__title">...and play the guitar.</span>
+                    <span class="hobbies__title hobbies__title-2">...and I play the guitar.</span>
                 </div>
             </div>
-
-            {{--<div class="hobbies__drawing hobbies__drawing-1">--}}
-                {{--<img class="about__img" src="/img/yonghwa.jpg" alt="Polska">--}}
-            {{--</div>--}}
-            {{--<div class="hobbies__drawing hobbies__drawing-2">--}}
-                {{--<img class="about__img" src="/img/polski.jpg" alt="Polska">--}}
-            {{--</div>--}}
-            {{--<div class="hobbies__drawing hobbies__drawing-3">--}}
-                {{--<img class="about__img" src="/img/polski.jpg" alt="Polska">--}}
-            {{--</div>--}}
-            {{--<div class="hobbies__drawing hobbies__drawing-4">--}}
-                {{--<img class="about__img" src="/img/polski.jpg" alt="Polska">--}}
-            {{--</div>--}}
-            {{--<img class="about__img" src="/img/polski.jpg" alt="Polska">--}}
         </div>
 
-
-        {{--<div class="dark-background about__container">--}}
-            {{--<h2 class="about__subtitle"><i class="far fa-building"></i> Work experience</h2>--}}
-
-            {{--<div class="about__work">--}}
-                {{--<div class="about__work--container agh">--}}
-                    {{--<div class="about__work--header">AGH University of Science and Technology</div>--}}
-                    {{--<span>February 2019 - Present</span>--}}
-                    {{--<span>Continuation of a library development created as a thesis project.</span>--}}
-                    {{--<div class="about__work--technologies">--}}
-                        {{--<div>Scala</div>--}}
-                        {{--<div>Selenium</div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-
-                {{--<div class="about__work--container andea">--}}
-                    {{--<div class="about__work--header">Andea</div>--}}
-                    {{--<span>April 2018 - February 2019</span>--}}
-                    {{--<span>Developing solutions for Manufacturing Execution Systems.</span>--}}
-                    {{--<div class="about__work--technologies">--}}
-                        {{--<div>T-SQL</div>--}}
-                        {{--<div>Delmia Apriso</div>--}}
-                        {{--<div>C#</div>--}}
-                        {{--<div>CSS</div>--}}
-                        {{--<div>JavaScript</div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-
-        {{--<div class="light-background about__container">--}}
-            {{--<h2 class="about__subtitle"><i class="fas fa-graduation-cap"></i> Education</h2>--}}
-            {{--<ul>--}}
-                {{--<li>--}}
-                    {{--<div class="about__details--title">Degree:</div>--}}
-                    {{--<div class="about__details--desc">Computer Science Engineer</div>--}}
-                {{--</li>--}}
-                {{--<li>--}}
-                    {{--<div class="about__details--title">University:</div>--}}
-                    {{--<div class="about__details--desc">AGH University of Science and Technology</div>--}}
-                {{--</li>--}}
-                {{--<li>--}}
-                    {{--<div class="about__details--title">Faculty:</div>--}}
-                    {{--<div class="about__details--desc">Computer Science, Electronics and Telecommunications</div>--}}
-                {{--</li>--}}
-                {{--<li>--}}
-                    {{--<div class="about__details--desc about__details--desc-small">Master's degree acquirement is expected on July 2020.</div>--}}
-                {{--</li>--}}
-            {{--</ul>--}}
-        {{--</div>--}}
-
-
-        {{--<div class="dark-background about__container">--}}
-            {{--<h2 class="about__subtitle"><i class="fas fa-language"></i> Languages</h2>--}}
-            {{--<ul>--}}
-                {{--<li>--}}
-                    {{--<div class="about__details--title">Polish</div>--}}
-                    {{--<div class="about__details--desc">Mother tongue</div>--}}
-                {{--</li>--}}
-                {{--<li>--}}
-                    {{--<div class="about__details--title">English</div>--}}
-                    {{--<div class="about__details--desc">Advanced, B2/C1</div>--}}
-                {{--</li>--}}
-                {{--<li>--}}
-                    {{--<div class="about__details--title">Japanese</div>--}}
-                    {{--<div class="about__details--desc">Upper Intermediate, N3/N2</div>--}}
-                {{--</li>--}}
-                {{--<li>--}}
-                    {{--<div class="about__details--title">Certificates</div>--}}
-                    {{--<div class="about__details--desc about__details--desc-small">Japanese-Language Proficiency Test N3 (December 2018)</div>--}}
-                {{--</li>--}}
-            {{--</ul>--}}
-        {{--</div>--}}
-
-        {{--<div class="light-background about__container">--}}
-            {{--<h2 class="about__subtitle"><i class="fas fa-guitar"></i> Hobbies</h2>--}}
-            {{--<ul>--}}
-                {{--<li>--}}
-                    {{--<div class="about__details--desc">Studying Japanese</div>--}}
-                {{--</li>--}}
-                {{--<li>--}}
-                    {{--<div class="about__details--desc">Creating websites</div>--}}
-                {{--</li>--}}
-                {{--<li>--}}
-                    {{--<div class="about__details--desc">Drawing portraits</div>--}}
-                {{--</li>--}}
-                {{--<li>--}}
-                    {{--<div class="about__details--desc">Japanese calligraphy</div>--}}
-                {{--</li>--}}
-                {{--<li>--}}
-                    {{--<div class="about__details--desc">Playing the guitar</div>--}}
-                {{--</li>--}}
-            {{--</ul>--}}
-        {{--</div>--}}
+        <div class="about__subcontainer ending dark-background">
+            <img class="ending__img" src="/img/nyanko.png" alt="Cat">
+        </div>
     </div>
 @endsection
