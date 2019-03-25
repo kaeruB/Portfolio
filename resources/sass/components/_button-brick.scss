@@ -9,9 +9,11 @@
   box-shadow: 2px 2px 8px $color-shadow;
   background: $color-button;
 
+  transition: all .4s;
+
   &:hover {
-    transform: translateY(-.3rem);
-    border-radius: 10%;
+    transform: translateY(-.7rem);
+    border-radius: 3px;
     background-color: $color-shadow;
     box-shadow: 4px 4px 8px $color-shadow;
 
