@@ -9,6 +9,8 @@
       display: flex;
       justify-content: center;
 
+      padding: 10rem 5rem;
+
       border-radius: 3px;
       background-color: $color-dark-violet;
       box-shadow: 2px 2px 8px $color-shadow;
@@ -18,7 +20,7 @@
   &-panel {
     display: flex;
     flex-direction: column;
-    height: 30rem;
+    min-height: 30rem;
     justify-content: center;
     //transition: transform .3s;
 

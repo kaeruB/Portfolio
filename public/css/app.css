@@ -10686,6 +10686,7 @@ body {
 header {
   height: 15vh;
   position: relative;
+  margin-bottom: 10rem;
 }
 
 .heading-primary {
@@ -10788,6 +10789,7 @@ button:focus,
   font-size: 3rem;
   margin: 0.5rem;
   padding: 0.6rem 0;
+  height: 8rem;
   color: #fcf9f6;
   box-shadow: 2px 2px 8px rgba(80, 21, 21, 0.73);
   background: #bdadad;
@@ -10813,7 +10815,7 @@ button:focus,
 
 .custom-link {
   width: 10rem;
-  height: 2.5rem;
+  height: 5rem;
   text-decoration: none;
   background: #fcf9f6;
   color: #928484;
@@ -11257,9 +11259,10 @@ button:focus,
 }
 
 .about .work {
-  height: 80rem;
+  height: 100rem;
   display: flex;
   flex-direction: column;
+  padding: 5rem 3rem;
 }
 
 .about .work__det-container {
@@ -11281,6 +11284,8 @@ button:focus,
   background-size: cover;
   width: 50%;
   height: 100%;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 .about .work__andea {
@@ -11294,6 +11299,8 @@ button:focus,
   background-size: cover;
   width: 50%;
   height: 100%;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 .about .work__job-name {
@@ -11325,7 +11332,8 @@ button:focus,
 }
 
 .about .language {
-  height: 50rem;
+  height: 70rem;
+  padding: 6rem;
   display: flex;
   justify-content: center;
 }
@@ -11386,7 +11394,8 @@ button:focus,
 .about .hobbies {
   display: flex;
   flex-direction: column;
-  height: 57rem;
+  justify-content: center;
+  height: 80rem;
   padding: 2rem;
 }
 
@@ -11488,7 +11497,7 @@ button:focus,
   background-size: contain;
   background-repeat: no-repeat;
   top: 0;
-  left: 50%;
+  left: 53%;
   position: absolute;
   display: flex;
 }
@@ -11598,6 +11607,15 @@ button:focus,
           transform: translateY(2px);
 }
 
+.contact-info__img-container {
+  height: 20rem;
+}
+
+.contact-info__img-container img {
+  height: 100%;
+  background-size: cover;
+}
+
 .contact-form__title,
 .contact-info__title {
   text-transform: uppercase;
@@ -11627,6 +11645,7 @@ button:focus,
   width: 80vw;
   display: flex;
   justify-content: center;
+  padding: 10rem 5rem;
   border-radius: 3px;
   background-color: #cc9592;
   box-shadow: 2px 2px 8px rgba(80, 21, 21, 0.73);
@@ -11635,7 +11654,7 @@ button:focus,
 .project-panel {
   display: flex;
   flex-direction: column;
-  height: 30rem;
+  min-height: 30rem;
   justify-content: center;
   width: 35%;
 }

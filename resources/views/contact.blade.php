@@ -54,6 +54,7 @@
                     <i class="fab fa-deviantart"></i>
                 </a>
             </div>
+            <div class="contact-info__img-container"><img src="/img/evee.png" alt=""></div>
         </div>
     </div>
 @endsection
