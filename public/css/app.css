@@ -10683,6 +10683,12 @@ body {
   font-family: "Shadows Into Light", cursive;
 }
 
+@media only screen and (max-width: 75em) {
+  body:not(:last-child) {
+    padding: 0rem;
+  }
+}
+
 header:not(.header--home) {
   height: 15vh;
   position: relative;
@@ -10817,6 +10823,10 @@ button:focus,
           transform: translateY(0.5rem);
 }
 
+.button-brick span {
+  padding: 1rem;
+}
+
 .home__img--figure {
   text-align: center;
 }
@@ -10841,6 +10851,7 @@ button:focus,
   color: #928484;
   border-radius: 3px;
   position: relative;
+  padding: 1rem;
 }
 
 .custom-link:after {
@@ -10988,7 +10999,7 @@ button:focus,
 
 @media only screen and (max-width: 75em) {
   .round-card:not(:last-child) {
-    margin-right: -1.5rem;
+    margin-bottom: 3rem;
   }
 }
 
@@ -11535,6 +11546,13 @@ button:focus,
   font-size: 3rem;
 }
 
+@media only screen and (max-width: 75em) {
+  .contact-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .contact-form {
   width: 50%;
   margin: 1rem;
@@ -11551,6 +11569,12 @@ button:focus,
 .contact-form .send-button:active {
   -webkit-transform: translateY(2px);
           transform: translateY(2px);
+}
+
+@media only screen and (max-width: 75em) {
+  .contact-form {
+    min-width: 60rem;
+  }
 }
 
 .contact-info {
@@ -11635,6 +11659,12 @@ button:focus,
   background-size: cover;
 }
 
+@media only screen and (max-width: 75em) {
+  .contact-info {
+    min-width: 60rem;
+  }
+}
+
 .contact-form__title,
 .contact-info__title {
   text-transform: uppercase;
@@ -11654,6 +11684,13 @@ button:focus,
   justify-content: center;
 }
 
+@media only screen and (max-width: 75em) {
+  .card-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .project-section {
   justify-content: center;
   display: flex;
@@ -11670,11 +11707,30 @@ button:focus,
   box-shadow: 2px 2px 8px rgba(80, 21, 21, 0.73);
 }
 
+@media only screen and (max-width: 75em) {
+  .project-section__container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .project-panel {
   display: flex;
   flex-direction: column;
   min-height: 30rem;
   justify-content: center;
   width: 35%;
+}
+
+@media only screen and (max-width: 75em) {
+  .project-panel {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    min-height: auto;
+    padding-bottom: 2rem;
+  }
 }
 

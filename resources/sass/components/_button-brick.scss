@@ -4,6 +4,7 @@
   margin: .5rem;
   padding: .6rem 0;
   height: 8rem;
+  //min-width: 20rem;
 
   color: $color-text-primary;
 
@@ -31,5 +32,9 @@
 
   &:active:not(.button-brick-disabled){
     transform: translateY(.5rem);
+  }
+
+  span {
+    padding: 1rem;
   }
 }

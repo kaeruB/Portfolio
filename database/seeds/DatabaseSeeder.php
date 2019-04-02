@@ -49,7 +49,7 @@ class DatabaseSeeder extends Seeder
 
         DB::table('projects')->insertGetId(
             [
-                'name' => 'Operating systems C projects',
+                'name' => 'C projects',
                 'type' => 'backend',
                 'year' => '2017',
                 'description' => 'During my second year of my engineering studies I have broaden my knowledge about creating sub-processes, operations on files, signals and more. I have build small projects in C language on Linux. Example under the link below.',
@@ -118,7 +118,7 @@ class DatabaseSeeder extends Seeder
           "Portfolio" => array("Laravel", "CSS/SCSS", "MySQL", "HTML", "PHP"),
             "Scrapla" => array("Scala", "Selenium", "sbt", "Akka", "Git"),
             "Japanese alphabet drill" => array("Java", "JavaSwing"),
-            "Operating systems C projects" => array("C"),
+            "C projects" => array("C"),
             "Tic tac toe" => array("C++"),
             "Wave player" => array("C"),
             "KITron" => array("Java", "JavaFX", "Git")

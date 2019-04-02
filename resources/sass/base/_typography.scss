@@ -3,6 +3,12 @@ body {
   letter-spacing: 1.1px;
   color: $color-secondary;
   font-family: 'Shadows Into Light', cursive;
+
+  @include respond(tab-land) {
+    &:not(:last-child) {
+      padding: 0rem;
+    }
+  }
 }
 
 header:not(.header--home) {

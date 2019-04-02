@@ -14,6 +14,12 @@
       border-radius: 3px;
       background-color: $color-dark-violet;
       box-shadow: 2px 2px 8px $color-shadow;
+
+
+      @include respond(tab-land) {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   }
 
@@ -25,5 +31,14 @@
     //transition: transform .3s;
 
     width: 35%;
+
+    @include respond(tab-land) {
+     flex-direction: row;
+      flex-wrap: wrap;
+      width: fit-content;
+      min-height: auto;
+      padding-bottom: 2rem;
+    }
+
   }
 }

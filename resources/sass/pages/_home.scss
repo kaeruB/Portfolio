@@ -1,5 +1,9 @@
 .card-section {
   display: flex;
   justify-content: center;
-  //height: 45vh;
+
+  @include respond(tab-land) {
+    flex-direction: column;
+    align-items: center;
+  }
 }

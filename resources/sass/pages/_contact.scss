@@ -3,6 +3,12 @@
     display: flex;
     align-items: stretch;
     font-size: $font-size-medium-text;
+
+
+    @include respond(tab-land) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &-form {
@@ -20,6 +26,11 @@
     .send-button:active {
       transform: translateY(2px);
     }
+
+    @include respond(tab-land) {
+      min-width: 60rem;
+    }
+
   }
 
   &-info {
@@ -106,6 +117,10 @@
         height: 100%;
         background-size: cover;
       }
+    }
+
+    @include respond(tab-land) {
+      min-width: 60rem;
     }
   }
 
