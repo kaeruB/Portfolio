@@ -2,18 +2,33 @@
 
 @section('secondary-header') frontend @endsection
 
+@section('bander-img')
+    <img class="centered-image__img" src="/img/nyanko_arrow_left2.png">
+@endsection
+
 @section('projects-labels')
     @if(count($projects) > 0)
-        @foreach($projects as $project)
+        @if (count($projects) == 1)
             <button
                     onclick="changeDescription(
-                            '{{$project->name}}',
-                            '{{$project->description}}',
-                            '{{$project->technology}}',
-                            '{{$project->source_url}}',
-                            '{{$project->site_url}}')"
-                    class="button-brick"><span class="title">{{$project->name}}</span></button>
-        @endforeach
+                            '{{$projects->first()->name}}',
+                            '{{$projects->first()->description}}',
+                            '{{$projects->first()->technology}}',
+                            '{{$projects->first()->source_url}}',
+                            '{{$projects->first()->site_url}}')"
+                    class="button-brick button-brick-disabled" disabled><span class="title">{{$projects->first()->name}}</span></button>
+            @else
+            @foreach($projects as $project)
+                <button
+                        onclick="changeDescription(
+                                '{{$project->name}}',
+                                '{{$project->description}}',
+                                '{{$project->technology}}',
+                                '{{$project->source_url}}',
+                                '{{$project->site_url}}')"
+                        class="button-brick"><span class="title">{{$project->name}}</span></button>
+            @endforeach
+        @endif
     @endif
 @endsection
 

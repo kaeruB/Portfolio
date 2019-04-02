@@ -10,6 +10,13 @@
 @endsection
 
 @section('container')
+    <div class="centered-image">
+        <figure class="centered-image__figure">
+            @yield('bander-img')
+        </figure>
+    </div>
+
+
     @include('utilities.home-button')
     <div class="project-section u-center-text u-margin-bottom-small">
         <div class="project-section__container">

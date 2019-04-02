@@ -10683,7 +10683,7 @@ body {
   font-family: "Shadows Into Light", cursive;
 }
 
-header {
+header:not(.header--home) {
   height: 15vh;
   position: relative;
   margin-bottom: 10rem;
@@ -10791,12 +10791,15 @@ button:focus,
   padding: 0.6rem 0;
   height: 8rem;
   color: #fcf9f6;
-  box-shadow: 2px 2px 8px rgba(80, 21, 21, 0.73);
   background: #bdadad;
   transition: all 0.4s;
 }
 
-.button-brick:hover {
+.button-brick:not(.button-brick-disabled) {
+  box-shadow: 2px 2px 8px rgba(80, 21, 21, 0.73);
+}
+
+.button-brick:hover:not(.button-brick-disabled) {
   -webkit-transform: translateY(-0.7rem);
           transform: translateY(-0.7rem);
   border-radius: 3px;
@@ -10804,14 +10807,30 @@ button:focus,
   box-shadow: 4px 4px 8px rgba(80, 21, 21, 0.73);
 }
 
-.button-brick:hover::before {
+.button-brick:hover:not(.button-brick-disabled)::before {
   box-shadow: 0 1rem 1rem rgba(80, 21, 21, 0.3);
   border-radius: 0;
 }
 
-.button-brick:active {
+.button-brick:active:not(.button-brick-disabled) {
   -webkit-transform: translateY(0.5rem);
           transform: translateY(0.5rem);
+}
+
+.home__img--figure {
+  text-align: center;
+}
+
+.home__img {
+  width: 50%;
+}
+
+.centered-image__figure {
+  text-align: center;
+}
+
+.centered-image__img {
+  width: 50%;
 }
 
 .custom-link {
@@ -10850,8 +10869,7 @@ button:focus,
 #footer {
   margin-top: 3rem;
   padding: 2rem;
-  color: #E9E9E9;
-  background: #928484;
+  color: #928484;
 }
 
 .home-button {

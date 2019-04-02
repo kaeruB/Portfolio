@@ -2,6 +2,10 @@
 
 @section('secondary-header') backend @endsection
 
+@section('bander-img')
+    <img class="centered-image__img" src="/img/nyanko_arrow_right.png">
+@endsection
+
 @section('projects-labels')
     @if(count($projects) > 0)
         @foreach($projects as $project)

@@ -15,7 +15,7 @@
                 <div class="education__cloud"><span class="about__title education__title--2">No more homework attack!</span></div>
             </div>
             <div class="education__right">
-                <span class="about__title education__title--1">I'm a Computer Science Engineer...</span>
+                <span class="about__title education__title--1">I'm a Bachelor of Computer Science...</span>
                 <span class="about__title education__title--3">Master's degree in 2020.</span>
             </div>
         </div>
@@ -68,7 +68,7 @@
             <div class="hobbies__row hobbies__row-1">
                 <div class="hobbies__row--right hobbies__drawings">
                     <img class="hobbies__drawing hobbies__drawing-1" src="/img/jackie.jpg" alt="Jackie Chan - drawing">
-                    <img class="hobbies__drawing hobbies__drawing-2" src="/img/gem2.jpg" alt="GEM - drawing">
+                    <img class="hobbies__drawing hobbies__drawing-2" src="/img/gem.jpg" alt="GEM - drawing">
                     <img class="hobbies__drawing hobbies__drawing-3" src="/img/yonghwa.jpg" alt="Yonghwa - drawing">
                     <img class="hobbies__drawing hobbies__drawing-4" src="/img/shuji.jpg" alt="Japanese character">
                 </div>

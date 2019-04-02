@@ -6,12 +6,17 @@
   height: 8rem;
 
   color: $color-text-primary;
-  box-shadow: 2px 2px 8px $color-shadow;
+
+  &:not(.button-brick-disabled) {
+    box-shadow: 2px 2px 8px $color-shadow;
+  }
   background: $color-button;
 
   transition: all .4s;
 
-  &:hover {
+
+
+  &:hover:not(.button-brick-disabled){
     transform: translateY(-.7rem);
     border-radius: 3px;
     background-color: $color-shadow;
@@ -23,7 +28,8 @@
     }
   }
 
-  &:active {
+
+  &:active:not(.button-brick-disabled){
     transform: translateY(.5rem);
   }
 }
