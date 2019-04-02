@@ -1,0 +1,17 @@
+.home__img--figure {
+  text-align: center;
+}
+
+.home__img {
+  width: 50%;
+}
+
+.centered-image {
+  &__figure {
+    text-align: center;
+  }
+
+  &__img {
+    width: 50%;
+  }
+}

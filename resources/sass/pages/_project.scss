@@ -5,42 +5,40 @@
     align-items: center;
 
     &__container {
+      width: 80vw;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+
+      padding: 10rem 5rem;
+
+      border-radius: 3px;
+      background-color: $color-dark-violet;
+      box-shadow: 2px 2px 8px $color-shadow;
+
+
+      @include respond(tab-land) {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   }
 
   &-panel {
     display: flex;
     flex-direction: column;
+    min-height: 30rem;
+    justify-content: center;
     //transition: transform .3s;
 
-    &.project-panel--left {
-      position: relative;
-      .left-pic {
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translateY(-24rem) translateX(-2rem);
+    width: 35%;
 
-        img {
-          width: 25rem;
-        }
-      }
+    @include respond(tab-land) {
+     flex-direction: row;
+      flex-wrap: wrap;
+      width: fit-content;
+      min-height: auto;
+      padding-bottom: 2rem;
     }
 
-    &.project-panel--right {
-      position: relative;
-      .right-pic {
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translateY(-19rem) translateX(-1rem);
-
-        img {
-          width: 20rem;
-        }
-      }
-    }
   }
 }

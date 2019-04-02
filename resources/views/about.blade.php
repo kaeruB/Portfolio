@@ -9,111 +9,86 @@
 @section('container')
     @include('utilities.home-button')
     <div class="about">
-        <div class="about__row">
-            {{--<div class="about__photo-container">--}}
-                <div class="about__small-container about__left-container about__photo">&nbsp</div>
-            {{--</div>--}}
-            <div class="about__small-container about__middle-container about__description dark-background">
-                <p>Hi! I'm Agata Bogacz and I'm a 4rd year student of Computer Science. During my engineering studies I practiced my skills creating various applications in imperative, object-oriented and functional languages.
-                I'm also keen on user interface design. Now my objective is to become a full-stack developer.</p>
+        <div class="about__subcontainer education dark-background">
+            <div class="education__left">
+                <img class="education__img" src="/img/agh.png" alt="AGH">
+                <div class="education__cloud"><span class="about__title education__title--2">No more homework attack!</span></div>
             </div>
-            <div class="about__small-container about__right-container about__details light-background">
-                <h2 class="about__subtitle">Education</h2>
-                <ul>
-                    <li>
-                        <div class="about__details--title">Degree:</div>
-                        <div class="about__details--desc">Computer Science Engineer</div>
-                    </li>
-                    <li>
-                        <div class="about__details--title">University:</div>
-                        <div class="about__details--desc">AGH University of Science and Technology</div>
-                    </li>
-                    <li>
-                        <div class="about__details--title">Faculty:</div>
-                        <div class="about__details--desc">Computer Science, Electronics and Telecommunications</div>
-                    </li>
-                    <li>
-                        <div class="about__details--desc about__details--desc-small">Master's degree acquirement is expected on July 2020.</div>
-                    </li>
-                </ul>
+            <div class="education__right">
+                <span class="about__title education__title--1">I'm a Bachelor of Computer Science...</span>
+                <span class="about__title education__title--3">Master's degree in 2020.</span>
             </div>
         </div>
-        <div class="about__row">
-            <div class="about__small-container about__left-container about__languages dark-background">
-                <h2 class="about__subtitle">Languages</h2>
-                <ul>
-                    <li>
-                        <div class="about__details--title">Polish</div>
-                        <div class="about__details--desc">Mother tongue</div>
-                    </li>
-                    <li>
-                        <div class="about__details--title">English</div>
-                        <div class="about__details--desc">Advanced, B2/C1</div>
-                    </li>
-                    <li>
-                        <div class="about__details--title">Japanese</div>
-                        <div class="about__details--desc">Upper Intermediate, N3/N2</div>
-                    </li>
-                    <li>
-                        <div class="about__details--title">Certificates</div>
-                        <div class="about__details--desc about__details--desc-small">Japanese-Language Proficiency Test N3 (December 2018)</div>
-                    </li>
-                </ul>
+        <div class="about__subcontainer work light-background">
+
+            <div class="work__agh">
+                <div class="work__det-container work__agh--desc">
+                    <span class="about__title work__title--1">I work at...</span>
+                    <div class="work__job-name">AGH</div>
+                    <div class="work__period">Feb. 2019 - Present</div>
+                    <div class="work__technologies">
+                        <div class="work__technology">Scala</div>
+                        <div class="work__technology">Selenium</div>
+                    </div>
+                    <div class="work__description">I continue a development of a library created as a thesis project <i class="far fa-smile-beam"></i> </div>
+                </div>
+                <div class="agh__img">&nbsp;</div>
             </div>
-            <div class="about__small-container about__middle-container about__work light-background">
-                <h2 class="about__subtitle">Work experience</h2>
-                <ul>
-                    <li>
-                        <div class="about__details--title">AGH</div>
-                        <div class="about__details--desc about__details--desc-small">
-                            (Feb. 2019 - Present)
-                            Continuation of a library development created as a thesis project.
-                            <div class="about__thesis about__thesis custom-link">
-                                <a href="/backend">More</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="about__details--title">Andea</div>
-                        <div class="about__details--desc about__details--desc-small">
-                            (Apr. 2018 - Feb. 2019)
-                            Developing solutions for Manufacturing Execution Systems, responsible for implementing back end for new systems, creating user interfaces and upgrading existing Andea’s programs.
-                        </div>
-                    </li>
-                    <li>
-                        <div class="about__details--title">technologies</div>
-                        <div class="about__details--desc about__details--desc-small">
-                            Microsoft SQL Server, SQL Server Reporting Services and Delmia Apriso products such as: Process Builder, Global Process Manager, Desktop Client, Machine Integrator.
-                        </div>
-                    </li>
-                    <li>
-                        <div class="about__details--title">Languages etc</div>
-                        <div class="about__details--desc about__details--desc-small">
-                            T-SQL, C\#, JavaScript, CSS
-                        </div>
-                    </li>
-                </ul>
+
+            <div class="work__andea">
+                <div class="andea__img">&nbsp;</div>
+                <div class="work__det-container work__agh--desc">
+                    <span class="about__title work__title--2">...and I had fun working in...</span>
+                    <div class="work__job-name">Andea</div>
+                    <div class="work__period">Apr. 2018 - Feb. 2019</div>
+                    <div class="work__technologies">
+                        <div class="work__technology">T-SQL</div>
+                        <div class="work__technology">Delmia Apriso</div>
+                        <div class="work__technology">C#</div>
+                        <div class="work__technology">CSS</div>
+                        <div class="work__technology">JavaScript</div>
+                    </div>
+                    <div class="work__description">Manufacturing Execution Systems <i class="fas fa-industry"></i></div>
+                </div>
             </div>
-            <div class="about__small-container about__right-container about__hobbies dark-background">
-                <h2 class="about__subtitle">Hobbies</h2>
-                <ul>
-                    <li>
-                        <div class="about__details--desc">Studying Japanese</div>
-                    </li>
-                    <li>
-                        <div class="about__details--desc">Creating websites</div>
-                    </li>
-                    <li>
-                        <div class="about__details--desc">Drawing portraits</div>
-                    </li>
-                    <li>
-                        <div class="about__details--desc">Japanese calligraphy</div>
-                    </li>
-                    <li>
-                        <div class="about__details--desc">Playing the guitar</div>
-                    </li>
-                </ul>
+
+
+        </div>
+
+        <div class="about__subcontainer language">
+
+                <span class="about__title language__polish language__left">I can speak Polish, English and... &nbsp; &nbsp; <i class="fas fa-hand-point-right"></i></span>
+                <div class="japanese language__right">
+                    <img class="japanese__img" src="/img/certyfikat.jpg" alt="N3 Japanese Certificate">
+                    <figcaption class="japanese__caption">Japanese <i class="far fa-smile-beam"></i> </figcaption>
+                </div>
+        </div>
+
+        <div class="about__subcontainer hobbies light-background">
+            <div class="hobbies__row hobbies__row-1">
+                <div class="hobbies__row--right hobbies__drawings">
+                    <img class="hobbies__drawing hobbies__drawing-1" src="/img/jackie.jpg" alt="Jackie Chan - drawing">
+                    <img class="hobbies__drawing hobbies__drawing-2" src="/img/gem.jpg" alt="GEM - drawing">
+                    <img class="hobbies__drawing hobbies__drawing-3" src="/img/yonghwa.jpg" alt="Yonghwa - drawing">
+                    <img class="hobbies__drawing hobbies__drawing-4" src="/img/shuji.jpg" alt="Japanese character">
+                </div>
+                <div class="hobbies__row--left">
+                    <span class="hobbies__title hobbies__title-1">I draw portraits and I study Japanese calligraphy <i class="far fa-smile-beam"></i> </span>
+                </div>
             </div>
+            {{--<div class="hobbies__row hobbies__row-2">--}}
+                {{--<div class="hobbies__row--left">--}}
+                    {{--<img class="" src="/img/gitara.png" alt="Me, playing the guitar">--}}
+                {{--</div>--}}
+                {{--<div class="hobbies__row--right">--}}
+                    {{--<span class="hobbies__title hobbies__title-2">...and I play the guitar.</span>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        </div>
+
+        <div class="about__subcontainer ending dark-background">
+            <img class="ending__img" src="/img/nyanko.png" alt="Cat">
+            <div class="ending__cloud"><span class="about__title ending__title">Thank you! にゃん！</span></div>
         </div>
     </div>
 @endsection

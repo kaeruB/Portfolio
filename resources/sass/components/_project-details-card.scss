@@ -1,24 +1,13 @@
 .project-details-card {
-  height: 35rem;
-  width: 55rem;
-  border-radius: 50%;
   margin: 0 2rem 0 2rem;
-
-  background-color: $color-secondary-transparent;
-  color: $color-text-primary;
-  box-shadow: 2px 2px 8px $color-shadow;
+  min-width: 40rem;
+  width: 65%;
 
   display: flex;
   flex-direction: column;
-  //justify-content: space-around;
-
+  color: $color-background-primary;
 
   &__main-info {
-    background: $color-dark-violet;
-    box-shadow: 3px -3px 5px 0px $color-shadow;
-
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
     height: 50%;
 
     display: flex;
@@ -31,7 +20,6 @@
     flex-direction: column;
     justify-content: space-around;
     height: 50%;
-    color: $color-primary;
     font-size: $font-size-medium-text;
   }
 

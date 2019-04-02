@@ -7,6 +7,8 @@
 @endsection
 
 @section('container')
+
+
     <div class="card-section">
         <div class="round-card">
             <div class="round-card__title">Projects</div>
@@ -31,5 +33,11 @@
                 <i class="far fa-envelope"></i>
             </a>
         </div>
+    </div>
+
+    <div class="centered-image">
+        <figure class="centered-image__figure">
+            <img class="centered-image__img" src="/img/nisemono2.png">
+        </figure>
     </div>
 @endsection

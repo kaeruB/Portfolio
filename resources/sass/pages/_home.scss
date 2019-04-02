@@ -1,4 +1,9 @@
 .card-section {
   display: flex;
   justify-content: center;
+
+  @include respond(tab-land) {
+    flex-direction: column;
+    align-items: center;
+  }
 }

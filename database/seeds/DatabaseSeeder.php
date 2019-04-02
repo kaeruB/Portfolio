@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
                 'name' => 'Portfolio',
                 'type' => 'frontend',
                 'year' => '2019',
-                'description' => 'The website is my interactive CV. I designed to learn Laravel framework and practice my other designing skills.',
+                'description' => 'A website about me. I designed it to learn Laravel framework and to develop intuition about web design and User Experience design.',
                 'source_url' => "https://github.com/kaeruB/Portfolio.git",
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime()
@@ -28,7 +28,7 @@ class DatabaseSeeder extends Seeder
                 'name' => 'Scrapla',
                 'type' => 'backend',
                 'year' => '2019',
-                'description' => 'It\'s a library for content analysis based on web scraping solutions that I\'ve created with Kinga Kaczmarczyk as thesis project. After graduation we continue the development as a university research project (current employment).',
+                'description' => 'A library for content analysis based on web scraping solutions that I have created with my colleague as a thesis project. After graduation we continue the development as a university research project (current employment).',
                 //'source_url' => "",
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime()
@@ -49,10 +49,10 @@ class DatabaseSeeder extends Seeder
 
         DB::table('projects')->insertGetId(
             [
-                'name' => 'Operating systems C projects',
+                'name' => 'C projects',
                 'type' => 'backend',
                 'year' => '2017',
-                'description' => 'During my second year of my engineering studies I\'ve broaden my knowledge about creating sub-processes, operations on files, signals and much more what I\'ve practiced building small projects in C language on Linux. Example one under the link below.',
+                'description' => 'During my second year of my engineering studies I have broaden my knowledge about creating sub-processes, operations on files, signals and more. I have build small projects in C language on Linux. Example under the link below.',
                 'source_url' => "https://github.com/kaeruB/Operating_Systems_Signals.git",
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime()
@@ -76,7 +76,7 @@ class DatabaseSeeder extends Seeder
                 'name' => 'Wave player',
                 'type' => 'backend',
                 'year' => '2018',
-                'description' => 'Wave player on STM32F4 Discovery. The program was created during laboratories and the co-author is Klaudia Knafel.',
+                'description' => 'Wave player on STM32F4 Discovery. I worked with my colleague.',
                 'source_url' => "https://github.com/kaeruB/WavePlayer.git",
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime()
@@ -88,7 +88,7 @@ class DatabaseSeeder extends Seeder
                 'name' => 'KITron',
                 'type' => 'backend',
                 'year' => '2018',
-                'description' => 'Game created during 2 days university\'s hackaton - we worked in a group of 6 students and completed the task with great success. I was responsible for client site of application along with Karolina Biela.',
+                'description' => 'Game created during 2 days university hackaton - we worked in a group of 6 students and completed the task with great success. I was responsible for client site of application.',
                 'source_url' => "https://github.com/bielakarolina/KITron.git",
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime()
@@ -118,7 +118,7 @@ class DatabaseSeeder extends Seeder
           "Portfolio" => array("Laravel", "CSS/SCSS", "MySQL", "HTML", "PHP"),
             "Scrapla" => array("Scala", "Selenium", "sbt", "Akka", "Git"),
             "Japanese alphabet drill" => array("Java", "JavaSwing"),
-            "Operating systems C projects" => array("C"),
+            "C projects" => array("C"),
             "Tic tac toe" => array("C++"),
             "Wave player" => array("C"),
             "KITron" => array("Java", "JavaFX", "Git")

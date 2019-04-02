@@ -3,13 +3,21 @@ body {
   letter-spacing: 1.1px;
   color: $color-secondary;
   font-family: 'Shadows Into Light', cursive;
+
+  @include respond(tab-land) {
+    &:not(:last-child) {
+      padding: 0rem;
+    }
+  }
 }
 
-header {
+header:not(.header--home) {
   //text-align: center;
   //padding: 5rem;
   height: 15vh;
   position: relative;
+
+  margin-bottom: 10rem;
 }
 
 .heading-primary {

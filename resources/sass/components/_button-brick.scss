@@ -1,17 +1,25 @@
 .button-brick {
-  width: 10rem;
-  height: 10rem;
-  border-radius: 10%;
+  border-radius: 3px;
   font-size: $font-size-medium-text;
   margin: .5rem;
+  padding: .6rem 0;
+  height: 8rem;
+  //min-width: 20rem;
 
   color: $color-text-primary;
-  box-shadow: 2px 2px 8px $color-shadow;
+
+  &:not(.button-brick-disabled) {
+    box-shadow: 2px 2px 8px $color-shadow;
+  }
   background: $color-button;
 
-  &:hover {
-    transform: translateY(-.3rem);
-    border-radius: 10%;
+  transition: all .4s;
+
+
+
+  &:hover:not(.button-brick-disabled){
+    transform: translateY(-.7rem);
+    border-radius: 3px;
     background-color: $color-shadow;
     box-shadow: 4px 4px 8px $color-shadow;
 
@@ -21,7 +29,12 @@
     }
   }
 
-  &:active {
+
+  &:active:not(.button-brick-disabled){
     transform: translateY(.5rem);
+  }
+
+  span {
+    padding: 1rem;
   }
 }

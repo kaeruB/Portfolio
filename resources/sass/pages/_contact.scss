@@ -1,15 +1,21 @@
 .contact {
   &-section {
     display: flex;
-    align-items: baseline;
+    align-items: stretch;
     font-size: $font-size-medium-text;
+
+
+    @include respond(tab-land) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &-form {
     width: 50%;
     margin: 1rem;
-    padding: 1rem;
-    border-radius: 5%;
+    padding: 1rem 4rem;
+    border-radius: 4px;
 
     box-shadow: 2px 2px 8px $color-shadow;
 
@@ -20,30 +26,74 @@
     .send-button:active {
       transform: translateY(2px);
     }
+
+    @include respond(tab-land) {
+      min-width: 60rem;
+    }
+
   }
 
   &-info {
     width: 50%;
-    flex-direction: column;
+    margin: 1rem;
     padding: 1rem;
-    border-radius: 5%;
+    border-radius: 4px;
+    flex-direction: column;
+    align-items: center;
 
     box-shadow: 2px 2px 8px $color-shadow;
-
     display: flex;
 
-    &__item {
+    &__items {
       display: flex;
-      margin-bottom: 1rem;
+      flex-flow: wrap;
+      justify-content: center;
+
+      margin-top: 3rem;
+    }
+
+    &__item {
+      width: 17rem;
+      height: 17rem;
+
+      margin: 1rem;
+      padding: 1rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       //transition: transform 1s;
-    }
 
-    &__mail {
-      text-align: center;
-    }
+      text-decoration: none;
+      background: $color-text-primary;
+      color: $color-footer;
+      border-radius: 4px;
+      position: relative;
 
-    &__link {
-      text-align: center;
+      font-size: $font-size-primary-heading;
+
+      &:after {
+        content: "";
+        width: 17rem;
+        height: 17rem;
+        border-radius: 4px;
+        background-color: $color-text-primary;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+      }
+
+      &:hover {
+        box-shadow: 2px 2px 8px $color-shadow;
+      }
+
+      &:active::after {
+        transform: scaleX(2) scaleY(2);
+        opacity: 0;
+      }
     }
 
     &__link:hover,
@@ -55,10 +105,23 @@
 
     &__link:active,
     &__mail:active {
+
+
       color: $color-secondary-dark;
       transform: translateY(2px);
     }
 
+    &__img-container {
+      height: 20rem;
+      img {
+        height: 100%;
+        background-size: cover;
+      }
+    }
+
+    @include respond(tab-land) {
+      min-width: 60rem;
+    }
   }
 
   &-form__title,
@@ -68,3 +131,12 @@
   }
 }
 
+.form-field {
+  &__label {
+    margin-left: 1rem;
+  }
+
+  &__text {
+    font-size: $font-size-small-text;
+  }
+}

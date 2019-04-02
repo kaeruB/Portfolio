@@ -9,14 +9,15 @@
     <title>Agata Izabela Bogacz</title>
     <link rel="stylesheet" href="/css/app.css">
 </head>
-<body>
-    <header>@yield('header')</header>
-    <div class="container">
-        @include('utilities.messages')
-        @yield('container')
-    </div>
-<footer id="footer" class="text-center">
-    <p>Copyright 2019 &copy; Agata Bogacz</p>
-</footer>
-</body>
+    <body>
+        <header>@yield('header')</header>
+        <div class="container">
+            @include('utilities.messages')
+            @yield('container')
+        </div>
+        <footer id="footer" class="text-center">
+            <p>Copyright 2019 &copy; Agata Bogacz</p>
+        </footer>
+        @yield('script')
+    </body>
 </html>

@@ -2,128 +2,318 @@
   display: flex;
   flex-direction: column;
 
-  &__row {
-    display: flex;
-    justify-content: center;
-    font-size: $font-size-medium-text;
-  }
+  font-size: $font-size-medium-text;
 
-  &__subtitle {
-    font-size: $font-size-secondary-heading;
-    text-align: center;
-  }
-
-  &__small-container {
-    margin: .5rem;
-    padding: 1rem;
-    border-radius: 5%;
+  &__subcontainer {
+    border-radius: 3px;
     box-shadow: 2px 2px 8px $color-shadow;
+  }
 
-    &:hover {
-      transform: translateY(-2px);
+  .education {
+    height: 40rem;
+    display: flex;
+
+    &__left,
+    &__right {
+      width: 50%;
     }
-  }
 
-  &__left-container {
-    width: 30%;
-  }
-
-  &__middle-container {
-    width: 40%;
-  }
-
-  &__right-container {
-    width: 30%;
-  }
-
-  //&__light-background {
-  //  background: $color-text-primary;
-  //  color: $color-primary;
-  //}
-  //
-  //&__dark-background {
-  //  background: $color-dark-violet;
-  //  color: $color-text-primary;
-  //}
-
-  &__photo {
-    background-image: linear-gradient(to right bottom, $color-primary, $color-secondary), url(/../img/Ag.png);
-    background-size: cover;
-    background-blend-mode: screen;
-    background-position: center;
-  }
-
-  &__description {
-    text-align: center;
-  }
-
-  &__details,
-  &__languages,
-  &__work,
-  &__hobbies {
-    ul {
-      list-style: none;
-      li {
-        display: flex;
-      }
+    &__left {
+      position: relative;
     }
-  }
 
-  &__details,
-  &__languages,
-  &__hobbies {
-    ul li {
+    &__right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
     }
-  }
 
-  &__details {
-    &--title {
-      color: $color-secondary;
-      text-transform: uppercase;
-      padding-right: 1rem;
+    &__img {
+      height: 90%;
+      background-size: cover;
+      transform: translateY(6rem);
     }
 
-    &--desc {
-      &-small {
+    &__cloud {
+      height: 55%;
+      background-image: url(/img/chmurka.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      top: 0;
+      left: 50%;
+      position: absolute;
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__title--1 {
+      align-self: center;
+      padding-top: 2rem;
+    }
+
+    &__title--2 {
+      font-size: $font-size-small-text;
+      padding: 3.5rem;
+      transform: translateY(-1rem);
+      color: black;
+    }
+
+    &__title--3 {
+      font-size: $font-size-small-text;
+    }
+  }
+
+  .work {
+    height: 100rem;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 3rem;
+
+    &__det-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      padding: 1rem;
+    }
+
+    &__agh {
+      height: 50%;
+      display: flex;
+      align-items: center;
+
+      .agh__img {
+        background-image: url(/img/kingata3.jpg);
+        background-size: cover;
+        width: 50%;
+        height: 100%;
+        transform: scale(.8);
+      }
+    }
+
+    &__andea {
+      height: 50%;
+      display: flex;
+      align-items: center;
+
+      .andea__img {
+        background-image:  url(/img/andea3.jpg); //linear-gradient(to bottom, $color-tertiary-transparent, $color-tertiary-transparent),
+        background-size: cover;
+        width: 50%;
+        height: 100%;
+        transform: scale(.8);
+      }
+    }
+
+    &__job-name {
+      font-weight: bold;
+    }
+
+    &__period {
+      font-size: $font-size-small-text;
+    }
+
+    &__technologies {
+      display: flex;
+      justify-content: center;
+      margin: 2rem;
+    }
+
+    &__technology {
+      //flex-direction: ;
+
+      font-size: $font-size-small-text;
+      background: $color-primary;
+      color: $color-text-primary;
+
+      border-radius: 50%;
+      margin: 1rem;
+      padding: .5rem;
+
+    }
+
+    &__description {
+      font-size: $font-size-small-text;
+      text-align: center;
+    }
+  }
+
+  .language {
+    height: 70rem;
+    padding: 6rem;
+
+    display: flex;
+    justify-content: center;
+
+    &__left,
+    &__right {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .japanese {
+      height: 100%;
+      position: relative;
+
+      &__img {
+        height: 100%;
+        background-size: cover;
+
+        transform: scale(.9);
+        transition: all 0.5s;
+        filter: brightness(95%);
+
+        outline: 1.5rem solid white;
+      }
+
+      &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        color: #fcf9f6;
+        text-transform: uppercase;
         font-size: $font-size-small-text;
+        text-align: center;
+        opacity: 0;
+        transition: transform .5s;
+        backface-visibility: hidden;
+      }
+
+      &:hover {
+        .japanese__img {
+          transform: scale(.95);
+          filter: blur(2px) brightness(70%);
+        }
+
+        .japanese__caption {
+          opacity: 1;
+          //transform: translate(-50%, 0);
+        }
       }
     }
   }
 
-  &__thesis {
-    width: 3rem;
-    display: inline-block;
+  .hobbies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    background: $color-dark-violet;
-    border-radius: 5%;
+    height: 80rem;
+    padding: 2rem;
 
-    transition: transform .3s;
+    &__row {
+      display: flex;
 
-    &:hover {
-      color: $color-dark-violet;
-      transform: translateY(-2px);
+      height: 50rem;
     }
 
-    &:active {
-      color: $color-dark-violet;
-      background: $color-text-primary;
-      transform: translateY(2px);
+    &__row-2 {
+      height: 30rem;
+
+      img {
+        transform: translateY(-50%) translateX(30%);
+      }
     }
 
-    a {
-      color: $color-text-primary;
+    &__row--left,
+    &__row--right {
+      width: 50%;
     }
 
-    a:hover {
-      text-decoration: none;
-      color: $color-text-primary;
+    &__title {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      align-items: center;
+      text-align: center;
 
+      &-1 {
+        transform: translateY(20%);
+      }
+
+      &-2 {
+        justify-content: center;
+      }
     }
 
-    a:active {
-      color: $color-dark-violet;
-      background: $color-text-primary;
+    &__drawings {
+      position: relative;
+    }
+
+    &__drawing {
+      width: 55%;
+      position: absolute;
+      z-index: 10;
+      transition: all .2s;
+      outline-offset: 2rem;
+      transform: scale(.9);
+
+      &:hover {
+        outline: 1.5rem solid $color-primary;
+        transform: scale(1) translateY(-.5rem);
+        box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.5);
+        z-index: 20;
+      }
+    }
+
+    &__drawing-1 {
+      left: 0;
+      top: -2rem;
+    }
+
+    &__drawing-2 {
+      right: 0;
+      top: 2rem;
+    }
+
+    &__drawing-3 {
+      left: 20%;
+      top: 10rem;
+    }
+
+    &__drawing-4 {
+      transform: scale(.7);
+      left: 55%;
+      top: 17rem;
+    }
+  }
+
+  .ending {
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    &__img {
+      height: 100%;
+      background-size: cover;
+    }
+
+    &__cloud {
+      height: 55%;
+      background-image: url(/img/chmurka.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      top: 0;
+      left: 53%;
+      position: absolute;
+
+      display: flex;
+    }
+
+    &__title {
+      font-size: $font-size-small-text;
+      color: black;
+      transform: translateY(20%);
+      padding: 2rem;
     }
   }
 }
