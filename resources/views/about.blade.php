@@ -73,7 +73,7 @@
                     <img class="hobbies__drawing hobbies__drawing-4" src="/img/shuji.jpg" alt="Japanese character">
                 </div>
                 <div class="hobbies__row--left">
-                    <span class="hobbies__title hobbies__title-1">I draw portraits and I study Japanese calligraphy <i class="far fa-smile-beam"></i> </span>
+                    <span class="hobbies__title hobbies__title-1">I draw portraits and study Japanese calligraphy <i class="far fa-smile-beam"></i> </span>
                 </div>
             </div>
             {{--<div class="hobbies__row hobbies__row-2">--}}

@@ -28,7 +28,7 @@
     }
 
     @include respond(tab-land) {
-      min-width: 60rem;
+      width: 100%;
     }
 
   }
@@ -120,7 +120,7 @@
     }
 
     @include respond(tab-land) {
-      min-width: 60rem;
+      width: 100%;
     }
   }
 

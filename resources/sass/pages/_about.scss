@@ -99,7 +99,7 @@
         transform: scale(.8);
 
         @include respond(tab-land) {
-          height: 50%;
+          height: 67%;
         }
       }
     }
@@ -117,7 +117,7 @@
         transform: scale(.8);
 
         @include respond(tab-land) {
-          height: 50%;
+          height: 67%;
         }
       }
     }
@@ -239,8 +239,7 @@
     padding: 2rem;
 
     @include respond(tab-land) {
-      padding-top: 4rem;
-      height: 45rem;
+      height: 60rem;
     }
 
     &__row {

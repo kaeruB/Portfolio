@@ -10676,6 +10676,13 @@ body {
   box-sizing: border-box;
 }
 
+@media only screen and (max-width: 75em) {
+  .container {
+    min-width: 98%;
+    padding: 0rem;
+  }
+}
+
 body {
   padding: 3rem;
   letter-spacing: 1.1px;
@@ -11345,7 +11352,7 @@ button:focus,
 
 @media only screen and (max-width: 75em) {
   .about .work__agh .agh__img {
-    height: 50%;
+    height: 67%;
   }
 }
 
@@ -11366,7 +11373,7 @@ button:focus,
 
 @media only screen and (max-width: 75em) {
   .about .work__andea .andea__img {
-    height: 50%;
+    height: 67%;
   }
 }
 
@@ -11487,8 +11494,7 @@ button:focus,
 
 @media only screen and (max-width: 75em) {
   .about .hobbies {
-    padding-top: 4rem;
-    height: 45rem;
+    height: 60rem;
   }
 }
 
@@ -11642,7 +11648,7 @@ button:focus,
 
 @media only screen and (max-width: 75em) {
   .contact-form {
-    min-width: 60rem;
+    width: 100%;
   }
 }
 
@@ -11730,7 +11736,7 @@ button:focus,
 
 @media only screen and (max-width: 75em) {
   .contact-info {
-    min-width: 60rem;
+    width: 100%;
   }
 }
 
