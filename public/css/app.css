@@ -10934,6 +10934,12 @@ button:focus,
   opacity: 0;
 }
 
+@media only screen and (max-width: 75em) {
+  .home-button {
+    font-size: 5rem;
+  }
+}
+
 .project-details-card {
   margin: 0 2rem 0 2rem;
   min-width: 40rem;

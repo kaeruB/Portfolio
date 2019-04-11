@@ -15,8 +15,6 @@ body {
 }
 
 .container {
-  //max-width: 900px;
-
   @include respond(tab-land) {
     min-width: 98%;
     padding: 0rem;
