@@ -38,7 +38,7 @@
             <div class="work__andea">
                 <div class="andea__img">&nbsp;</div>
                 <div class="work__det-container work__agh--desc">
-                    <span class="about__title work__title--2">...and I had fun working in...</span>
+                    <span class="about__title work__title--2">...and spent a nice time working in...</span>
                     <div class="work__job-name">Andea</div>
                     <div class="work__period">Apr. 2018 - Feb. 2019</div>
                     <div class="work__technologies">
@@ -57,10 +57,10 @@
 
         <div class="about__subcontainer language">
 
-                <span class="about__title language__polish language__left">I can speak Polish, English and... &nbsp; &nbsp; <i class="fas fa-hand-point-right"></i></span>
+                <span class="about__title language__polish language__left">I can speak Polish, English and Japanese &nbsp;<i class="fas fa-hand-point-right"></i></span>
                 <div class="japanese language__right">
                     <img class="japanese__img" src="/img/certyfikat.jpg" alt="N3 Japanese Certificate">
-                    <figcaption class="japanese__caption">Japanese <i class="far fa-smile-beam"></i> </figcaption>
+                    <figcaption class="japanese__caption">Japanese Language Proficiency Test N3 Certificate<i class="far fa-smile-beam"></i> </figcaption>
                 </div>
         </div>
 

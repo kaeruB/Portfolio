@@ -53,6 +53,7 @@
     &__title--1 {
       align-self: center;
       padding-top: 2rem;
+      text-align: center;
     }
 
     &__title--2 {
@@ -60,6 +61,10 @@
       padding: 3.5rem;
       transform: translateY(-1rem);
       color: black;
+
+      @include respond(tab-land) {
+        display: none;
+      }
     }
 
     &__title--3 {
@@ -92,6 +97,10 @@
         width: 50%;
         height: 100%;
         transform: scale(.8);
+
+        @include respond(tab-land) {
+          height: 50%;
+        }
       }
     }
 
@@ -106,6 +115,10 @@
         width: 50%;
         height: 100%;
         transform: scale(.8);
+
+        @include respond(tab-land) {
+          height: 50%;
+        }
       }
     }
 
@@ -121,6 +134,7 @@
       display: flex;
       justify-content: center;
       margin: 2rem;
+      flex-wrap: wrap;
     }
 
     &__technology {
@@ -140,6 +154,10 @@
       font-size: $font-size-small-text;
       text-align: center;
     }
+
+    &__title--2 {
+      text-align: center;
+    }
   }
 
   .language {
@@ -149,12 +167,24 @@
     display: flex;
     justify-content: center;
 
+    @include respond(tab-land) {
+      display: initial;
+    }
+
     &__left,
     &__right {
       width: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
+
+      @include respond(tab-land) {
+        width: 100%;
+        text-align: center;
+
+        //max-height: 25.5rem;
+        //overflow: hidden;
+      }
     }
 
     .japanese {
@@ -163,7 +193,7 @@
 
       &__img {
         height: 100%;
-        background-size: cover;
+        background-size: initial;
 
         transform: scale(.9);
         transition: all 0.5s;
@@ -208,10 +238,19 @@
     height: 80rem;
     padding: 2rem;
 
+    @include respond(tab-land) {
+      padding-top: 4rem;
+      height: 45rem;
+    }
+
     &__row {
       display: flex;
 
       height: 50rem;
+
+      @include respond(tab-land) {
+        height: 40rem;
+      }
     }
 
     &__row-2 {

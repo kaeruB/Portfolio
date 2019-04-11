@@ -10998,6 +10998,11 @@ button:focus,
 }
 
 @media only screen and (max-width: 75em) {
+  .round-card {
+    width: 50rem;
+    height: 50rem;
+  }
+
   .round-card:not(:last-child) {
     margin-bottom: 3rem;
   }
@@ -11124,6 +11129,13 @@ button:focus,
   position: relative;
 }
 
+@media only screen and (max-width: 75em) {
+  .round-card__img-shape {
+    width: 25rem;
+    height: 25rem;
+  }
+}
+
 .round-card__agata {
   height: 100%;
   -webkit-transform: scale(1.1);
@@ -11177,6 +11189,12 @@ button:focus,
   -webkit-transform: translate(-50%, -30%);
           transform: translate(-50%, -30%);
   font-size: 16rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .round-card__icon-container {
+    font-size: 20rem;
+  }
 }
 
 .round-card__icon-container:hover {
@@ -11274,6 +11292,7 @@ button:focus,
 .about .education__title--1 {
   align-self: center;
   padding-top: 2rem;
+  text-align: center;
 }
 
 .about .education__title--2 {
@@ -11282,6 +11301,12 @@ button:focus,
   -webkit-transform: translateY(-1rem);
           transform: translateY(-1rem);
   color: black;
+}
+
+@media only screen and (max-width: 75em) {
+  .about .education__title--2 {
+    display: none;
+  }
 }
 
 .about .education__title--3 {
@@ -11318,6 +11343,12 @@ button:focus,
           transform: scale(0.8);
 }
 
+@media only screen and (max-width: 75em) {
+  .about .work__agh .agh__img {
+    height: 50%;
+  }
+}
+
 .about .work__andea {
   height: 50%;
   display: flex;
@@ -11333,6 +11364,12 @@ button:focus,
           transform: scale(0.8);
 }
 
+@media only screen and (max-width: 75em) {
+  .about .work__andea .andea__img {
+    height: 50%;
+  }
+}
+
 .about .work__job-name {
   font-weight: bold;
 }
@@ -11345,6 +11382,7 @@ button:focus,
   display: flex;
   justify-content: center;
   margin: 2rem;
+  flex-wrap: wrap;
 }
 
 .about .work__technology {
@@ -11361,11 +11399,21 @@ button:focus,
   text-align: center;
 }
 
+.about .work__title--2 {
+  text-align: center;
+}
+
 .about .language {
   height: 70rem;
   padding: 6rem;
   display: flex;
   justify-content: center;
+}
+
+@media only screen and (max-width: 75em) {
+  .about .language {
+    display: initial;
+  }
 }
 
 .about .language__left,
@@ -11376,6 +11424,14 @@ button:focus,
   align-items: center;
 }
 
+@media only screen and (max-width: 75em) {
+  .about .language__left,
+  .about .language__right {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .about .language .japanese {
   height: 100%;
   position: relative;
@@ -11383,7 +11439,7 @@ button:focus,
 
 .about .language .japanese__img {
   height: 100%;
-  background-size: cover;
+  background-size: initial;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
   transition: all 0.5s;
@@ -11429,9 +11485,22 @@ button:focus,
   padding: 2rem;
 }
 
+@media only screen and (max-width: 75em) {
+  .about .hobbies {
+    padding-top: 4rem;
+    height: 45rem;
+  }
+}
+
 .about .hobbies__row {
   display: flex;
   height: 50rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .about .hobbies__row {
+    height: 40rem;
+  }
 }
 
 .about .hobbies__row-2 {

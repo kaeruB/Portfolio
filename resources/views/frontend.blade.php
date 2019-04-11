@@ -16,7 +16,7 @@
                             '{{$projects->first()->technology}}',
                             '{{$projects->first()->source_url}}',
                             '{{$projects->first()->site_url}}')"
-                    class="button-brick button-brick-disabled" disabled><span class="title">{{$projects->first()->name}}</span></button>
+                    class="button-brick button-brick-disabled" disabled style="display: none"><span class="title">{{$projects->first()->name}}</span></button>
             @else
             @foreach($projects as $project)
                 <button

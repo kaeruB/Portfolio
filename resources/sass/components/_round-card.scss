@@ -14,6 +14,9 @@
     &:not(:last-child) {
       margin-bottom: 3rem;
     }
+
+    width: 50rem;
+    height: 50rem;
   }
 
   &__title {
@@ -139,6 +142,11 @@
     transform: translate(-50%, -10%);
     overflow: hidden;
     position: relative;
+
+    @include respond(tab-land) {
+      width: 25rem;
+      height: 25rem;
+    }
   }
 
   &__agata {
@@ -183,6 +191,10 @@
     transform: translate(-50%, -30%);
     font-size: 16rem;
     //transition: translate .4s; ??
+
+    @include respond(tab-land) {
+      font-size: 20rem;
+    }
 
     &:hover {
       transform: translate(-50%, -35%);
