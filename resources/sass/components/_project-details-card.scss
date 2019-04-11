@@ -7,6 +7,10 @@
   flex-direction: column;
   color: $color-background-primary;
 
+  @include respond(tab-land) {
+    height: 50rem;
+  }
+
   &__main-info {
     height: 50%;
 

@@ -10703,7 +10703,7 @@ header:not(.header--home) {
 }
 
 .heading-primary {
-  font-size: 4.5rem;
+  font-size: 5rem;
   text-transform: uppercase;
   display: inline-block;
   position: absolute;
@@ -10718,7 +10718,7 @@ header:not(.header--home) {
 }
 
 .heading-secondary {
-  font-size: 4rem;
+  font-size: 4.5rem;
   display: inline-block;
   position: absolute;
   top: 76%;
@@ -10799,7 +10799,7 @@ button:focus,
 
 .button-brick {
   border-radius: 3px;
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin: 0.5rem;
   padding: 0.6rem 0;
   height: 8rem;
@@ -10894,7 +10894,7 @@ button:focus,
   position: fixed;
   left: 15%;
   top: 2rem;
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: rgba(80, 21, 21, 0.73);
   background: #fcf9f6;
   border-radius: 25%;
@@ -10949,6 +10949,12 @@ button:focus,
   color: #FCECEA;
 }
 
+@media only screen and (max-width: 75em) {
+  .project-details-card {
+    height: 50rem;
+  }
+}
+
 .project-details-card__main-info {
   height: 50%;
   display: flex;
@@ -10961,16 +10967,16 @@ button:focus,
   flex-direction: column;
   justify-content: space-around;
   height: 50%;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .project-details-card__title {
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
 }
 
 .project-details-card__description {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .project-details-card__source {
@@ -11023,7 +11029,7 @@ button:focus,
 
 .round-card__title {
   color: #fcf9f6;
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
   position: absolute;
   top: 30%;
@@ -11034,7 +11040,7 @@ button:focus,
 }
 
 .round-card__projects {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   position: absolute;
   top: 50%;
@@ -11253,7 +11259,7 @@ button:focus,
 .about {
   display: flex;
   flex-direction: column;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .about__subcontainer {
@@ -11309,7 +11315,7 @@ button:focus,
 }
 
 .about .education__title--2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding: 3.5rem;
   -webkit-transform: translateY(-1rem);
           transform: translateY(-1rem);
@@ -11323,7 +11329,7 @@ button:focus,
 }
 
 .about .education__title--3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .about .work {
@@ -11388,7 +11394,7 @@ button:focus,
 }
 
 .about .work__period {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .about .work__technologies {
@@ -11399,7 +11405,7 @@ button:focus,
 }
 
 .about .work__technology {
-  font-size: 2rem;
+  font-size: 2.5rem;
   background: #ee817b;
   color: #fcf9f6;
   border-radius: 50%;
@@ -11408,7 +11414,7 @@ button:focus,
 }
 
 .about .work__description {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 
@@ -11469,7 +11475,7 @@ button:focus,
           transform: translate(-50%, 0);
   color: #fcf9f6;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
   opacity: 0;
   transition: -webkit-transform 0.5s;
@@ -11614,7 +11620,7 @@ button:focus,
 }
 
 .about .ending__title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: black;
   -webkit-transform: translateY(20%);
           transform: translateY(20%);
@@ -11624,7 +11630,7 @@ button:focus,
 .contact-section {
   display: flex;
   align-items: stretch;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 @media only screen and (max-width: 75em) {
@@ -11690,7 +11696,7 @@ button:focus,
   color: #928484;
   border-radius: 4px;
   position: relative;
-  font-size: 4.5rem;
+  font-size: 5rem;
 }
 
 .contact-info__item:after {
@@ -11749,7 +11755,7 @@ button:focus,
 .contact-form__title,
 .contact-info__title {
   text-transform: uppercase;
-  font-style: 4rem;
+  font-style: 4.5rem;
 }
 
 .form-field__label {
@@ -11757,7 +11763,7 @@ button:focus,
 }
 
 .form-field__text {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .card-section {
@@ -11780,6 +11786,7 @@ button:focus,
 
 .project-section__container {
   width: 80vw;
+  min-height: 60rem;
   display: flex;
   justify-content: center;
   padding: 10rem 5rem;

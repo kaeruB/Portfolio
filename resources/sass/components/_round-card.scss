@@ -21,7 +21,7 @@
 
   &__title {
     color: $color-text-primary;
-    font-size: 3rem;
+    font-size: $font-size-medium-text;
     text-transform: uppercase;
     position: absolute;
     top: 30%;
@@ -33,7 +33,7 @@
 
   &__projects {
     //display: flex;
-    font-size: 2rem;
+    font-size: $font-size-small-text;
     text-transform: uppercase;
     position: absolute;
     top: 50%;

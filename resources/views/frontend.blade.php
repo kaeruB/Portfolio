@@ -9,14 +9,9 @@
 @section('projects-labels')
     @if(count($projects) > 0)
         @if (count($projects) == 1)
-            <button
-                    onclick="changeDescription(
-                            '{{$projects->first()->name}}',
-                            '{{$projects->first()->description}}',
-                            '{{$projects->first()->technology}}',
-                            '{{$projects->first()->source_url}}',
-                            '{{$projects->first()->site_url}}')"
-                    class="button-brick button-brick-disabled" disabled style="display: none"><span class="title">{{$projects->first()->name}}</span></button>
+            <script type="text/javascript">
+                document.querySelector('.project-panel').style.display = 'none';
+            </script>
             @else
             @foreach($projects as $project)
                 <button
