@@ -134,7 +134,7 @@ class DatabaseSeeder extends Seeder
             "Tic tac toe" => array("C++"),
             "Wave player" => array("C"),
             "KITron" => array("Java", "JavaFX", "Git"),
-            "Music Influence" => array("Angular7", "TypeScript", "SCSS")
+            "Music Influence" => array("Angular7", "TypeScript", "CSS/SCSS")
         );
 
         foreach ($projectTechnologies as $projectName => $projectList) {
