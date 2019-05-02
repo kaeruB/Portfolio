@@ -15,8 +15,6 @@
 
   transition: all .4s;
 
-
-
   &:hover:not(.button-brick-disabled){
     transform: translateY(-.7rem);
     border-radius: 3px;

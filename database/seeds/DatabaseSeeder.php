@@ -95,8 +95,20 @@ class DatabaseSeeder extends Seeder
             ]
         );
 
+        DB::table('projects')->insertGetId(
+            [
+                'name' => 'Music Influence',
+                'type' => 'frontend',
+                'year' => '2019',
+                'description' => 'A website is part of a research of an influence of background music on human. A user has to complete a memory game during listening to music.',
+                'source_url' => "https://github.com/kaeruB/MusicInfluenceResearch",
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime()
+            ]
+        );
+
         $technologies = array(
-          "basic" =>  array("Laravel", "JavaSwing", "C++", "Erlang/Elixir", "C#", "PHP", "JavaScript", "sbt", "JavaFX"),
+          "basic" =>  array("Laravel", "JavaSwing", "C++", "Erlang/Elixir", "C#", "PHP", "JavaScript", "sbt", "JavaFX", "Angular7", "TypeScript"),
             "intermediate" => array("Java", "CSS/SCSS", "MySQL", "Scala", "C", "HTML", "Selenium", "Akka", "Git"),
             "advanced" => array("T-SQL")
         );
@@ -121,7 +133,8 @@ class DatabaseSeeder extends Seeder
             "C projects" => array("C"),
             "Tic tac toe" => array("C++"),
             "Wave player" => array("C"),
-            "KITron" => array("Java", "JavaFX", "Git")
+            "KITron" => array("Java", "JavaFX", "Git"),
+            "Music Influence" => array("Angular7", "TypeScript", "SCSS")
         );
 
         foreach ($projectTechnologies as $projectName => $projectList) {
