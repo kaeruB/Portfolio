@@ -87,7 +87,7 @@
         </div>
 
         <div class="about__subcontainer ending dark-background">
-            <img class="ending__img" src="/img/nyanko.png" alt="Cat">
+            <img class="ending__img" src="/img/aniolek.png" alt="Cat">
             <div class="ending__cloud"><span class="about__title ending__title">Thank you! にゃん！</span></div>
         </div>
     </div>
