@@ -11333,7 +11333,7 @@ button:focus,
 }
 
 .about .work {
-  height: 100rem;
+  height: 135rem;
   display: flex;
   flex-direction: column;
   padding: 5rem 3rem;
@@ -11345,6 +11345,27 @@ button:focus,
   align-items: center;
   width: 50%;
   padding: 1rem;
+}
+
+.about .work__akamai {
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.about .work__akamai .akamai__img {
+  background-image: linear-gradient(to bottom, #ffb2ae3b, #ffb2ae3b), url(/img/akamai2.jpg);
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+@media only screen and (max-width: 75em) {
+  .about .work__akamai .akamai__img {
+    height: 67%;
+  }
 }
 
 .about .work__agh {
@@ -11391,6 +11412,10 @@ button:focus,
 
 .about .work__job-name {
   font-weight: bold;
+}
+
+.about .work__job-name a {
+  color: inherit;
 }
 
 .about .work__period {

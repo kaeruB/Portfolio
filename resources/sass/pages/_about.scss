@@ -73,7 +73,7 @@
   }
 
   .work {
-    height: 100rem;
+    height: 135rem;
     display: flex;
     flex-direction: column;
     padding: 5rem 3rem;
@@ -84,6 +84,24 @@
       align-items: center;
       width: 50%;
       padding: 1rem;
+    }
+
+    &__akamai {
+      height: 50%;
+      display: flex;
+      align-items: center;
+
+      .akamai__img {
+        background-image: linear-gradient(to bottom, $color-tertiary-transparent, $color-tertiary-transparent), url(/img/akamai2.jpg);
+        background-size: cover;
+        width: 50%;
+        height: 100%;
+        transform: scale(.8);
+
+        @include respond(tab-land) {
+          height: 67%;
+        }
+      }
     }
 
     &__agh {
@@ -124,6 +142,10 @@
 
     &__job-name {
       font-weight: bold;
+
+      a {
+        color: inherit;
+      }
     }
 
     &__period {

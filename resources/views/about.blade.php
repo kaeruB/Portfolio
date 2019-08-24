@@ -21,16 +21,31 @@
         </div>
         <div class="about__subcontainer work light-background">
 
-            <div class="work__agh">
+            <div class="work__akamai">
+                <div class="akamai__img">&nbsp;</div>
                 <div class="work__det-container work__agh--desc">
                     <span class="about__title work__title--1">I work at...</span>
+                    <div class="work__job-name"><a href="https://www.akamai.com" class="contact-info__link">Akamai</a></div>
+                    <div class="work__period">Jul. 2019 - Present</div>
+                    <div class="work__technologies">
+                        <div class="work__technology">JavaScript</div>
+                        <div class="work__technology">ReactJS</div>
+                        <div class="work__technology">HighCharts</div>
+                    </div>
+                    <div class="work__description">as a front-end developer intern <i class="fas fa-baby"></i></div>
+                </div>
+            </div>
+
+            <div class="work__agh">
+                <div class="work__det-container work__agh--desc">
+                    <span class="about__title work__title--2">...I developed a webscraping library...</span>
                     <div class="work__job-name">AGH</div>
-                    <div class="work__period">Feb. 2019 - Present</div>
+                    <div class="work__period">Feb. 2019 - Jun. 2019</div>
                     <div class="work__technologies">
                         <div class="work__technology">Scala</div>
                         <div class="work__technology">Selenium</div>
                     </div>
-                    <div class="work__description">I continue a development of a library created as a thesis project <i class="far fa-smile-beam"></i> </div>
+                    <div class="work__description"> <i class="fas fa-university"></i> </div>
                 </div>
                 <div class="agh__img">&nbsp;</div>
             </div>
@@ -44,8 +59,6 @@
                     <div class="work__technologies">
                         <div class="work__technology">T-SQL</div>
                         <div class="work__technology">Delmia Apriso</div>
-                        <div class="work__technology">C#</div>
-                        <div class="work__technology">CSS</div>
                         <div class="work__technology">JavaScript</div>
                     </div>
                     <div class="work__description">Manufacturing Execution Systems <i class="fas fa-industry"></i></div>
