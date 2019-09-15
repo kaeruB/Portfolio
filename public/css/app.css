@@ -11291,8 +11291,8 @@ button:focus,
 .about .education__img {
   height: 90%;
   background-size: cover;
-  -webkit-transform: translateY(6rem);
-          transform: translateY(6rem);
+  -webkit-transform: translateY(6.5rem);
+          transform: translateY(6.5rem);
 }
 
 .about .education__cloud {

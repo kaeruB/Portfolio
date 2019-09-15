@@ -11,12 +11,12 @@
     <div class="about">
         <div class="about__subcontainer education dark-background">
             <div class="education__left">
-                <img class="education__img" src="/img/agh.png" alt="AGH">
-                <div class="education__cloud"><span class="about__title education__title--2">No more homework attack!</span></div>
+                <img class="education__img" src="/img/agata3.gif" alt="Agata">
+                <div class="education__cloud"><span class="about__title education__title--2">Student life is coming to an end!</span></div>
             </div>
             <div class="education__right">
-                <span class="about__title education__title--1">I'm a Bachelor of Computer Science...</span>
-                <span class="about__title education__title--3">Master's degree in 2020.</span>
+                <span class="about__title education__title--1">I'm a Bachelor of Computer Science</span>
+                <span class="about__title education__title--3">Master's degree in 2020</span>
             </div>
         </div>
         <div class="about__subcontainer work light-background">
